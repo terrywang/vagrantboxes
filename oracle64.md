@@ -1,4 +1,4 @@
-racle Linux 6.3 x86_64 box for Vagrant
+# Oracle Linux 6.3 x86_64 box for Vagrant
 
 * Project: [Vagrant](https://github.com/terrywang/vagrant)
 * Download: [Oracle Linux 6.3 x86_64 base box](https://www.dropbox.com/s/zejz4yljiexqcfu/oracle64.box)
