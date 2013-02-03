@@ -26,7 +26,7 @@ This is a minimal base box for vagrantbox.es project. Created using VirtualBox 4
 7. Network NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle64" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oracle.vagrantup.com`
-8. Extra packages added (EPEL repositories disabled after installation)
+8. Extra packages added (EPEL repositories disabled)
     * htop
     * colordiff
     * tmux (~vagrant/.tmux.conf)
@@ -41,10 +41,12 @@ This is a minimal base box for vagrantbox.es project. Created using VirtualBox 4
     * iptables (off)
     * ip6tables (off)
 10. SELinux disabled, to re-enable, edit `/etc/selinux/config`.
-11. Prepare to install Oracle Database 11gR2, the `oracle-rdbms-server-11gR2-preinstall` package will install all dependencies and configure the system to meet all requirements with 1 step
+11. Prepare to install Oracle Database 11gR2, the `oracle-rdbms-server-11gR2-preinstall` package installs all dependencies and configure the system to meet all requirements with 1 step
     * Install Oracle RDBMS Pre-Install RPM => `yum install oracle-rdbms-server-11gR2-preinstall`
     * Refer to [How I Simplified Oracle Database 11g Installation on Oracle Linux 6](http://www.oracle.com/technetwork/articles/servers-storage-admin/ginnydbinstallonlinux6-1845247.html)
-    * Download Oracle Database 11gR2 install media and get your hands dirty on Oracle Database. NOTE: The RPM installs X11 client packages **BUT NOT** X11 Server packages. To run GUI either use ssh with X11 Forwarding to keep the box slim;-)
+    * Download Oracle Database 11gR2 install media and get your hands dirty on Oracle Database.
+    * **NOTE**: The Pre-Install RPM installs X11 client libraries but **NOT** X Window System server packages.
+    * To run GUI, enable ssh X11 Forwarding by using either `ssh -X vagrant@localhost -p 2222` (input vagrant user password) or `ssh -X -i /path/to/vagrant vagrant@localhost -p 2222` for public key authentication. Private key **vagrant** is avalable [here](https://raw.github.com/mitchellh/vagrant/master/keys/vagrant).
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
@@ -57,7 +59,7 @@ This is a minimal base box for vagrantbox.es project. Created using VirtualBox 4
 Download the base box and get started
 
 ```
-$ vagrant box add oracle64 https://www.dropbox.com/s/zejz4yljiexqcfu/oracle64.box
+$ vagrant box add oracle64 https://dl.dropbox.com/s/zejz4yljiexqcfu/oracle64.box
 $ vagrant init oracle64
 $ vagrant up
 ```
