@@ -1,7 +1,7 @@
 # Oracle Linux 6 x86_64 Base Box for Vagrant
 
 * Project: [Vagrant](https://github.com/terrywang/vagrant)
-* Download: [Oracle Linux 6 x86_64 vagrant base box](https://www.dropbox.com/s/zejz4yljiexqcfu/oracle64.box)
+* Download: [Oracle Linux 6 x86_64 vagrant base box](http://j.mp/oracle64)
 
 This is a minimal base box built for vagrantbox.es project. Created using VirtualBox 4.2.6 on Ubuntu 12.04 x86_64, guest additions installed.
 
@@ -9,10 +9,10 @@ This is a minimal base box built for vagrantbox.es project. Created using Virtua
 
 ## Vagrant Base Box Information
 
-1. Release: `Oracle Linux 6.3 x86_64`, Kernel UEK2 => `2.6.39-300.26.1.el6uek.x86_64`
+1. Release: `Oracle Linux 6.3 x86_64`, Kernel UEK2 => `2.6.39-300.28.1.el6uek.x86_64`
 2. VirtualBox Guest Additions 4.2.6 installed
 3. Default run level 3 => `id:3:initdefault:`
-4. Public YUM configured, system up-to-date (**packages** and **errata**) as of Feb 1, 2013. To keep it updated, simpley run `yum update` as `root`.
+4. Public YUM configured, system up-to-date (**packages** and **errata**) as of Feb 8, 2013. To keep it updated, simpley run `yum update` as `root`.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -59,12 +59,15 @@ This is a minimal base box built for vagrantbox.es project. Created using Virtua
 
 ## Getting started
 
-Download the base box and get it started
+Download the base box and get the box started
 
 ```
-$ vagrant box add oracle64 https://dl.dropbox.com/s/zejz4yljiexqcfu/oracle64.box
+$ vagrant box add oracle64 http://j.mp/oracle64box
+$ mkdir test_environment
+$ cd test_environment
 $ vagrant init oracle64
 $ vagrant up
+$ vagrant ssh
 ```
 
 ## Reference
