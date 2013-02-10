@@ -1,9 +1,10 @@
 # Oracle Linux 6 x86_64 Base Box for Vagrant
 
 * Project: [Vagrant](https://github.com/terrywang/vagrant)
-* Download: [Oracle Linux 6 x86_64 vagrant base box](http://j.mp/oracle64box)
+* Download: [Oracle Linux 6 x86_64 Vagrant Base Box](https://www.dropbox.com/s/zmitpteca72sjpx/oracle64.box)
+* Direct URL: [https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box](https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box)
 
-This is a minimal base box built for vagrantbox.es project. Created using VirtualBox 4.2.6 on Ubuntu 12.04 x86_64, guest additions installed.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Created using VirtualBox 4.2.6 on Ubuntu 12.04 x86_64, guest additions installed.
 
 > **NOTE**: This Oracle Linux 6.3 base box can be updated to latest **6.x** minor release once it is made available, by using Oracle's Public YUM Server. You also get package updates and errata for free. For instance, once Oracle Linux 6.4 is made available, just run `yum update -y` to update the base box to 6.4. Enjoy.
 
@@ -43,11 +44,11 @@ This is a minimal base box built for vagrantbox.es project. Created using Virtua
     * sshd (on)
     * iptables (off)
     * ip6tables (off)
-10. SELinux disabled, to re-enable, edit `/etc/selinux/config`.
+10. SELinux disabled, to re-enable, edit `/etc/selinux/config` and reboot
 11. Prepare to install Oracle Database 11gR2, the `oracle-rdbms-server-11gR2-preinstall` package installs all dependencies and configure the system to meet all requirements with 1 step
     * Install Oracle RDBMS Pre-Install RPM => `yum install oracle-rdbms-server-11gR2-preinstall`
     * Refer to [How I Simplified Oracle Database 11g Installation on Oracle Linux 6](http://www.oracle.com/technetwork/articles/servers-storage-admin/ginnydbinstallonlinux6-1845247.html)
-    * Download Oracle Database 11gR2 install media and get your hands dirty on Oracle Database.
+    * Download Oracle Database and Fusion Middleware (e.g. WebLogic Server) installers and get your hands dirty on Oracle Database and Fusion Middleware.
     * **NOTE**: The Pre-Install RPM installs X11 client libraries but **NOT** X Window System server packages.
     * To run GUI, enable ssh X11 Forwarding by using either `ssh -X vagrant@localhost -p 2222` (input vagrant user password) or `ssh -X -i /path/to/vagrant vagrant@localhost -p 2222` for public key authentication. Private key **vagrant** is avalable [here](https://raw.github.com/mitchellh/vagrant/master/keys/vagrant).
 
@@ -62,7 +63,7 @@ This is a minimal base box built for vagrantbox.es project. Created using Virtua
 Download the base box and get the box started
 
 ```
-$ vagrant box add oracle64 http://j.mp/oracle64box
+$ vagrant box add oracle64 https://www.dropbox.com/s/zmitpteca72sjpx/oracle64.box
 $ mkdir test_environment
 $ cd test_environment
 $ vagrant init oracle64
