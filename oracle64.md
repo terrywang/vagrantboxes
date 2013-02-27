@@ -4,7 +4,7 @@
 * Download: [Oracle Linux 6 x86_64 Vagrant Base Box](https://www.dropbox.com/s/zmitpteca72sjpx/oracle64.box)
 * Direct URL: [https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box](https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box)
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Created using VirtualBox 4.2.6 on Ubuntu 12.04 x86_64, guest additions installed.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Created using VirtualBox 4.2.6 on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.0.6.
 
 > **NOTE**: This Oracle Linux 6.3 base box can be updated to latest **6.x** minor release once it is made available, by using Oracle's Public YUM Server. You also get package updates and errata for free. For instance, once Oracle Linux 6.4 is made available, just run `yum update -y` to update the base box to 6.4. Enjoy.
 
@@ -54,9 +54,9 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Creat
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* Ruby 1.9.3-p374 installed using `ruby-build` plugin
-* `chef` gem installed
-* Other gems => `bundler`, `rbenv-rehash`
+* ruby 1.9.3-p392 installed using`ruby-build`
+* `chef` 11.4.0 installed
+* Other gems => `bundler`, `rbenv-rehash`, `ruby-shadow`
 
 ## Getting started
 
