@@ -4,16 +4,17 @@
 * Download: [Oracle Linux 6.4 x86_64 Vagrant Base Box](https://www.dropbox.com/s/zmitpteca72sjpx/oracle64.box)
 * Direct URL: [https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box](https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box)
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.6 (now 4.2.12) on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.0.6 (now 1.2.2).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.6 (now 4.2.12) on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.2.2 (initially 1.0.6).
 
 > **NOTE**: This Oracle Linux 6.4 base box can be updated to latest **6.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 6.5 is made available, just run `yum update -y` and stay sharp. Enjoy!
 
 ## Vagrant Base Box Information
 
-1. Release: `Oracle Linux 6.4 x86_64`, Kernel UEK2 => `2.6.39-400.24.1.el6uek`, Red Hat Compatible Kernel => `2.6.32-358.6.2.el6 ` 
+1. Release: `Oracle Linux 6.4 x86_64`
+2. Kernels: UEK2 => `2.6.39-400.24.1.el6uek`, Red Hat Compatible Kernel => `2.6.32-358.6.2.el6 ` 
 2. VirtualBox Guest Additions 4.2.12 installed
 3. Default run level 3 => `id:3:initdefault:`
-4. Public YUM configured, system up-to-date (**packages** and **errata**) as of May 23, 2013. Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of **June 4**, 2013. Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -30,10 +31,11 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 7. Networking Mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle64" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oracle.vagrantup.com`
-8. Extra packages added (EPEL repositories disabled)
+8. Extra packages installed
     * tmux (`~vagrant/.tmux.conf` based on [Gist](https://gist.github.com/terrywang/3950393))
     * gdb
     * strace
+    * git
     * rsync
     * htop
     * pv
@@ -49,12 +51,13 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * iptables (off)
     * ip6tables (off)
 10. SELinux is disabled, to re-enable, edit `/etc/selinux/config` and reboot
-11. Prepare to install Oracle Database 11gR2, the `oracle-rdbms-server-11gR2-preinstall` package installs all dependencies and configure the system to meet all requirements with 1 step
+11. To install Oracle Database 11gR2 or 12c, the `oracle-rdbms-server-11gR2-preinstall` package installs all dependencies and configure the system to meet all requirements with **one simple step**
     * Install Oracle RDBMS Pre-Install RPM => `yum install oracle-rdbms-server-11gR2-preinstall`
     * Refer to [How I Simplified Oracle Database 11g Installation on Oracle Linux 6](http://www.oracle.com/technetwork/articles/servers-storage-admin/ginnydbinstallonlinux6-1845247.html)
-    * Download Oracle Database and Fusion Middleware (e.g. WebLogic Server) installers and get your hands dirty on Oracle Database and Fusion Middleware.
+    * Download Oracle Database and Fusion Middleware (e.g. WebLogic Server) installers and get your hands dirty ;-)
     * **NOTE**: The Pre-Install RPM installs X11 client libraries but **NOT** X Window System server packages.
-    * To run GUI, enable ssh X11 Forwarding by using either `ssh -X vagrant@localhost -p 2222` (input vagrant user password) or `ssh -X -i /path/to/vagrant vagrant@localhost -p 2222` for public key authentication. Private key **vagrant** is available [here](https://raw.github.com/mitchellh/vagrant/master/keys/vagrant).
+    * To use GUI, enable ssh X11 Forwarding by using `ssh -X vagrant@localhost -p 2222` (input vagrant user password) or `ssh -X -i /path/to/vagrant vagrant@localhost -p 2222` for public key authentication. Private key **vagrant** is available [here](https://raw.github.com/mitchellh/vagrant/master/keys/vagrant).
+    * In case trusted X11 forwardings are required, use `ssh -Y vagrant@localhost -p 2222` instead of `ssh -X vagrant@localhost -p 2222`.
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
