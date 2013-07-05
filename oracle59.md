@@ -1,10 +1,10 @@
 # Oracle Linux 5 x86_64 Base Box for Vagrant
 
-* Project: [Vagrant@GitHub](https://github.com/terrywang/vagrant)
+* Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
 * Download: [Oracle Linux 5.9 x86_64 Vagrant Base Box](https://www.dropbox.com/s/n5o3gfdgjc3ekhl/oracle59.box)
 * Direct URL: [https://dl.dropbox.com/s/n5o3gfdgjc3ekhl/oracle59.box](https://dl.dropbox.com/s/n5o3gfdgjc3ekhl/oracle59.box)
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 on Ubuntu 13.04 x86_64, guest additions installed, packaged using Vagrant 1.2.2.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.16 on Ubuntu 13.04 x86_64, guest additions installed, packaged using Vagrant 1.2.2.
 
 > **NOTE**: This Oracle Linux 5.9 base box can be updated to latest **5.x** minor releases (if there is) once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. 5.9 is supposed to be the last minor release for Oracle Linux 5.
 
@@ -12,9 +12,9 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 1. Release: `Oracle Linux 5.9 x86_64`
 2. Kernels: UEK2 => `2.6.39-400.24.1.el5uek`, Red Hat Compatible Kernel => `2.6.18-348.6.1.0.1.el5` 
-3. VirtualBox Guest Additions 4.2.12 installed
+3. VirtualBox Guest Additions 4.2.16 installed
 4. Default run level 3 => `id:3:initdefault:`
-5. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of May 31, 2013. Simply run `yum update -y` as `root` to stay updated.
+5. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of July 4, 2013. Simply run `yum update -y` as `root` to stay updated.
 6. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -59,7 +59,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* `ruby 2.0.0-p195` installed using `ruby-build`
+* `ruby 1.9.3-p448` installed using `ruby-build`
 * `chef` 11.4.4 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
 * Other gems => `bundler`, `rbenv-rehash`, `ruby-shadow`
@@ -69,10 +69,10 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 Download the base box and get the box started
 
 ```
-$ vagrant box add oracle64 https://dl.dropbox.com/s/n5o3gfdgjc3ekhl/oracle59.box
+$ vagrant box add oracle59 https://dl.dropbox.com/s/n5o3gfdgjc3ekhl/oracle59.box
 $ mkdir test_environment
 $ cd test_environment
-$ vagrant init oracle64
+$ vagrant init oracle59
 $ vagrant up
 $ vagrant ssh
 ```
