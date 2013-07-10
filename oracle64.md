@@ -51,8 +51,8 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * iptables (off)
     * ip6tables (off)
 10. SELinux is disabled, to re-enable, edit `/etc/selinux/config` and reboot
-11. To install Oracle Database 11gR2 or 12c, the `oracle-rdbms-server-11gR2-preinstall` package installs all dependencies and configure the system to meet all requirements with **one simple step**
-    * Install Oracle RDBMS Pre-Install RPM => `yum install oracle-rdbms-server-11gR2-preinstall`
+11. To install Oracle Database 11gR2 or 12c, the `oracle-rdbms-server-11gR2-preinstall` or `oracle-rdbms-server-12cR1-preinstall` package installs all dependencies and configure the system to meet all requirements with **one simple step**
+    * Install Oracle RDBMS Pre-Install RPM => `yum install oracle-rdbms-server-11gR2-preinstall` for **11gR2**, `yum install oracle-rdbms-server-12cR1-preinstall` for **12cR1**
     * Refer to [How I Simplified Oracle Database 11g Installation on Oracle Linux 6](http://www.oracle.com/technetwork/articles/servers-storage-admin/ginnydbinstallonlinux6-1845247.html)
     * Download Oracle Database and Fusion Middleware (e.g. WebLogic Server) installers and get your hands dirty ;-)
     * **NOTE**: The Pre-Install RPM installs X11 client libraries but **NOT** X Window System server packages.
