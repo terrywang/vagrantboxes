@@ -68,7 +68,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 Download the base box and get the box started
 
-```
+```bash
 $ vagrant box add oracle59 https://dl.dropbox.com/s/n5o3gfdgjc3ekhl/oracle59.box
 $ mkdir test_environment
 $ cd test_environment
