@@ -9,7 +9,7 @@ List of boxes
 - Oracle Linux 6.4 x86_64
 - Arch Linux x86_64
 
-> **NOTE**: Veewee definitions are to be added to automate the building of Vagrant Base Boxes;-) 
+Veewee definitions are in [`veewee/definitions`](https://github.com/terrywang/vagrantboxes/tree/master/veewee/definitions) to automate the building of Vagrant Base Boxes;-) Check its [README.md](https://github.com/terrywang/vagrantboxes/blob/master/veewee/README.md) for usage.
 
 Additional list of places where you can get all sorts of vagrant base boxes for different purposes: development, testing, or even production.
 
@@ -34,6 +34,6 @@ Distributions included: Ubuntu Server, Debian, CentOS and Fedora.
 
 - [**Vagrant Ubuntu Cloud Images**](http://cloud-images.ubuntu.com/vagrant/)
 
- It’s been there since Jan, 2013. For some reason Canonical has NOT officially promoted it yet, may be still in beta. Remember these are vanilla images, NOT very useful without Chef or Puppet.
+ It's been there since Jan, 2013. For some reason Canonical has NOT officially promoted it yet, may be still in beta. Remember these are vanilla images, NOT very useful without Chef or Puppet.
 
 If you are looking for Virtual Machines with server applications (e.g. GitLab, Discourse, WordPress, Redmine, Ruby Stack, Joomla!, Drupal etc…) pre-installed and configured, try Bitnami Stacks, it rocks!
