@@ -32,6 +32,8 @@ $ bundle install
 $ rbenv rehash
 ```
 
+**NOTE**: These definitions have already been merged into veewee's master branch, so there is **NO** need to copy. Skip the `rsync` below ;-)
+
 Copy the definitions to the `templates` directory
 
 ```bash
@@ -40,13 +42,13 @@ $ rsync -av --progress --stats \
   /path/to/workspace/veewee/templates
 ```
 
-**NOTE**: These definitions have NOT been merged into the veewee project yet.
-
 Ready to build!
 
 ## Build
 
 List templates
+
+> NOTE: Suppose we are going to build base box for Oracle Linux 6.4 x86_64.
 
 ```bash
 $ bundle exec veewee vbox templates | grep -i oracle
