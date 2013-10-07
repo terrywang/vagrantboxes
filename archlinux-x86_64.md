@@ -4,16 +4,16 @@
 * Download: [Arch Linux x86_64 Vagrant Base Box](https://www.dropbox.com/s/e822cu82nnief6a/arch64.box)
 * Direct URL: [https://dl.dropbox.com/s/e822cu82nnief6a/arch64.box](https://dl.dropbox.com/s/e822cu82nnief6a/arch64.box)
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.2.18) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.3.3.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.2.18) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.3.4.
 
-This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If unfortunately it breaks, time to test your troubleshooting skills;-)
+This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of September 20, 2013.
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of October 7, 2013.
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `3.11.1-1-ARCH`
+2. Kernel: `3.11.4-1-ARCH`
 3. VirtualBox Guest Additions 4.2.18 installed 
 4. `yaourt` installed as the front end for AUR
 5. Users and passwords
@@ -30,24 +30,24 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Default hostname => `archlinux.vagrant.vm`
     * Persists network interface from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`
 8. Additional packages installed (including AUR)
-    * zsh
-    * htop
-    * inetutils
-    * dnsutils
-    * coreutils
-    * moreutils
-    * sshfs
-    * ack
-    * ag (silver-searcher)
-    * colordiff
-    * tmux (~vagrant/.tmux.conf)
-    * pv
-    * bash-completion
-    * cowsay
-    * corkscrew / socat / nmap / connect-proxy (AUR)
-    * nethogs
-    * strace
-    * gdb
+    * `zsh`
+    * `htop`
+    * `inetutils`
+    * `dnsutils`
+    * `coreutils`
+    * `moreutils`
+    * `sshfs`
+    * `ack`
+    * `ag` (silver-searcher)
+    * `colordiff`
+    * `tmux` (with `~vagrant/.tmux.conf`)
+    * `pv`
+    * `bash-completion`
+    * `cowsay` and `octocatsay` for fun
+    * `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
+    * `nethogs`
+    * `strace`
+    * `gdb`
 9. `systemd` Services (units)
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
