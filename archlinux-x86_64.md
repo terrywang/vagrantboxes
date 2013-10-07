@@ -48,10 +48,11 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `nethogs`
     * `strace`
     * `gdb`
-9. `systemd` Services (units)
+9. `systemd` Services (units) and journal size
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
+    * **NOTE**: `systemd` **journal size** has been limited to 50MB by setting `SystemMaxUse=50M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
 
 ## Basic Software
 
