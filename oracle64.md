@@ -71,7 +71,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add oracle64 https://www.dropbox.com/s/zmitpteca72sjpx/oracle64.box
+$ vagrant box add oracle64 https://dl.dropbox.com/s/zmitpteca72sjpx/oracle64.box
 $ mkdir test_environment
 $ cd test_environment
 $ vagrant init oracle64
