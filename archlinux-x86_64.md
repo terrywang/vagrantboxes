@@ -1,8 +1,8 @@
 # Arch Linux x86_64 Base Box for Vagrant
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
-* Download: [Arch Linux x86_64 Vagrant Base Box](https://www.dropbox.com/s/e822cu82nnief6a/arch64.box)
-* Direct URL: [https://dl.dropbox.com/s/e822cu82nnief6a/arch64.box](https://dl.dropbox.com/s/e822cu82nnief6a/arch64.box)
+* Download: [Arch Linux x86_64 Vagrant Base Box](https://www.dropbox.com/s/h7nkcwheyh1n8xh/archlinux-x86_64.box)
+* Direct URL: [https://dl.dropbox.com/s/h7nkcwheyh1n8xh/archlinux-x86_64.box](https://dl.dropbox.com/s/h7nkcwheyh1n8xh/archlinux-x86_64.box)
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.6) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.3.4 (now 1.4.3).
 
@@ -66,10 +66,10 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add arch64 https://dl.dropbox.com/s/e822cu82nnief6a/arch64.box
+$ vagrant box add archlinux-x86_64 https://dl.dropbox.com/s/h7nkcwheyh1n8xh/archlinux-x86_64.box
 $ mkdir test_environment
 $ cd test_environment
-$ vagrant init arch64
+$ vagrant init archlinux-x86_64
 $ vagrant up
 $ vagrant ssh
 ```
