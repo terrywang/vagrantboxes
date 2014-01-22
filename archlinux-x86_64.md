@@ -46,6 +46,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `cowsay` and `octocatsay` for fun
     * `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
     * `nethogs`
+    * `dmidecode`
+    * `smem`
+    * `inxi`
     * `strace`
     * `gdb`
 9. `systemd` Services (units) and journal size
