@@ -1,6 +1,6 @@
 # Veewee Definitions
 
-[Veewee](https://github.com/jedi4ever/veewee) definitions that can be used to automate the building of Oracle Linux 5.9 and 6.4 Vagrant Base Boxes.
+[Veewee](https://github.com/jedi4ever/veewee) definitions that can be used to automate the building of Oracle Linux {5,6} Vagrant Base Boxes.
 
 > **NOTE**: If veewee runs behind firewall and require proxy servers to access the Internet, uncomment and set proxy servers in `proxy.sh`.
 
@@ -84,6 +84,5 @@ Export the base box
 $ bundle exec veewee vbox export 'oraclelinux-6.4-x86_64'
 ```
 
-Done, `oraclelinux-6.4-x86_64.box` should be created in veewee root directory, distribute and consume it using vagrant.
-
+Done, `oraclelinux-6.4-x86_64.box` should be created in veewee root directory, distribute and consume it using vagrant, have fun ;-)
 
