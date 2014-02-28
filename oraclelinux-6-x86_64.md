@@ -4,7 +4,7 @@
 * Download: [Oracle Linux 6.5 x86_64 Vagrant Base Box](https://www.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box)
 * Direct URL: [https://dl.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box](https://dl.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box)
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.8 (now 4..16) on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.4.3 (initially 1.0.6).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.4 (now 4.3.8) on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.4.3 (initially 1.0.6).
 
 > **NOTE**: This Oracle Linux 6.5 base box can be updated to latest **6.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 6.6 is made available, just run `yum update -y` and stay sharp. Enjoy!
 
