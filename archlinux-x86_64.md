@@ -31,16 +31,16 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Persists network interface from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`
 8. Additional packages installed (including AUR)
     * `bash-completion`, `zsh`
-    * `htop`, `smem`, `inxi`
+    * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
     * `sshfs`
     * `ack`, `ag` (silver-searcher)
-    * `colordiff`
+    * `colordiff`, `multitail`, `gawk`
     * `vim` with `vundle`
     * `tmux` (with `~vagrant/.tmux.conf`)
     * `cowsay` and `octocatsay` for fun
-    * `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
-    * `dmidecode`
+    * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
+    * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
 9. `systemd` Services (units) and journal size
     * sshd.service (enabled)
