@@ -30,27 +30,17 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Default hostname => `archlinux.vagrant.vm`
     * Persists network interface from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`
 8. Additional packages installed (including AUR)
-    * `zsh`
-    * `htop`
-    * `inetutils`
-    * `dnsutils`
-    * `coreutils`
-    * `moreutils`
+    * `bash-completion`, `zsh`
+    * `htop`, `smem`, `inxi`
+    * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
     * `sshfs`
-    * `ack`
-    * `ag` (silver-searcher)
+    * `ack`, `ag` (silver-searcher)
     * `colordiff`
     * `tmux` (with `~vagrant/.tmux.conf`)
-    * `pv`
-    * `bash-completion`
     * `cowsay` and `octocatsay` for fun
-    * `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
-    * `nethogs`
+    * `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
     * `dmidecode`
-    * `smem`
-    * `inxi`
-    * `strace`
-    * `gdb`
+    * `strace`, `gdb`
 9. `systemd` Services (units) and journal size
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
