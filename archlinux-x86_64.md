@@ -37,6 +37,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ack`, `ag` (silver-searcher)
     * `colordiff`, `multitail`, `gawk`
     * `vim` with `vundle`
+    * `ranger` (vim-like file manager)
     * `tmux` (with `~vagrant/.tmux.conf`)
     * `cowsay` and `octocatsay` for fun
     * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
