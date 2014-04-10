@@ -36,6 +36,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `sshfs`
     * `ack`, `ag` (silver-searcher)
     * `colordiff`
+    * `vim` with `vundle`
     * `tmux` (with `~vagrant/.tmux.conf`)
     * `cowsay` and `octocatsay` for fun
     * `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
