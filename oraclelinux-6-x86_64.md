@@ -1,8 +1,8 @@
 # Oracle Linux 6 x86_64 Base Box for Vagrant
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
-* Download: [Oracle Linux 6.5 x86_64 Vagrant Base Box](https://www.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box)
-* Direct URL: [https://dl.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box](https://dl.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box)
+* Download: [Oracle Linux 6.5 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-6-x86_64.box)
+* SHA256: `19e605b2e368d6950c58240e443a5acdfdb2ed6b44de3267acfd77b86b85305c`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.4 (now 4.3.8) on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.4.3 (initially 1.0.6).
 
