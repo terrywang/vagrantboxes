@@ -8,12 +8,12 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 10, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 15, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `3.14.0-4-ARCH`
+2. Kernel: `3.14.1-1-ARCH`
 3. VirtualBox Guest Additions 4.3.10 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
 4. `yaourt` installed as the front end for AUR
 5. Users and passwords
