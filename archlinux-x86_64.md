@@ -62,7 +62,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add archlinux-x86_64 https://dl.dropbox.com/s/h7nkcwheyh1n8xh/archlinux-x86_64.box
+$ vagrant box add archlinux-x86_64 ADDRESS
 $ mkdir test_environment
 $ cd test_environment
 $ vagrant init archlinux-x86_64

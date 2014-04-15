@@ -72,7 +72,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add oraclelinux-6.5-x86_64 https://dl.dropbox.com/s/613uhl43ekqzami/oraclelinux-6-x86_64.box
+$ vagrant box add oraclelinux-6.5-x86_64 ADDRESS
 $ mkdir test_environment
 $ cd test_environment
 $ vagrant init oraclelinux-6.5-x86_64
