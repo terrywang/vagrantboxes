@@ -2,13 +2,13 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `bab7e59bad2f20044424e0b718ec6c9a733215a71a1fe7e17458a85fd8253cba`
+* SHA256: `f0c25affe0a54912ce94deb9c21e53d7364a5c00aefa8c19b9f83342f1bba79f`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.5.2 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 15, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 17, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
 
 ## Vagrant Base Box Information
 
@@ -19,6 +19,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` (Public Key authentication, password-less sudo)
+    * `systemd-journal-gateway` system user/group to run `systemd-journal-gatewayd`
 6. File Systems Layout
     * Virtual Hard Disk Capacity 10GB, Dynamically allocated
     * `/dev/sda1` => `/` `ext4` 7.4GB
