@@ -4,7 +4,7 @@
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
 * SHA256: `f0c25affe0a54912ce94deb9c21e53d7364a5c00aefa8c19b9f83342f1bba79f`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.5.2 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.5.3 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
