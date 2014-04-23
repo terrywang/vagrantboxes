@@ -2,13 +2,13 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `7a00d25d3927aac50b548aca99f9251fb45092b9abcc6e9b23d503d189aee3d0`
+* SHA256: `52e00bd6103c5ce24e4709fb69f3bfc4b25deb9988f3d5a9df62c44f08f59670`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.5.4 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 22, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 23, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
 
 ## Vagrant Base Box Information
 
