@@ -30,7 +30,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
     * Default hostname => `archlinux.vagrant.vm`
     * Persists network interface from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`
-8. Additional packages installed (including AUR)
+8. Kernel Parameters
+    * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent between reboots.
+9. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`
     * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
@@ -44,12 +46,12 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
-9. `systemd` Services (units) and journal size
+10. `systemd` Services (units) and journal size
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
     * **NOTE**: `systemd` **journal size** has been limited to 50MB by setting `SystemMaxUse=50M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
-10. `ca-certificates` - Common CA Certificates
+11. `ca-certificates` - Common CA Certificates
     * CNNIC certificates has been removed for safety reasons
     * For more details, see `/etc/ca-certificates.conf`
     * DO NOT forget to run `update-ca-certificates` to apply the change.
