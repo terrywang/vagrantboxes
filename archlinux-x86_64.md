@@ -39,7 +39,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `sshfs`
     * `ack`, `ag` (silver-searcher)
     * `colordiff`, `multitail`, `gawk`
-    * `vim` with `vundle`
+    * `vim` with `Vundle.vim`
     * `ranger` (vim-like file manager)
     * `tmux` (with `~vagrant/.tmux.conf`), `reptyr` (reparent a running program to a new terminal)
     * `cowsay` and `octocatsay` for fun
