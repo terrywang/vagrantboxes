@@ -50,7 +50,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
-    * **NOTE**: `systemd` **journal size** has been limited to 50MB by setting `SystemMaxUse=50M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
+    * **NOTE**: `systemd` **journal size** has been limited to 100MB by setting `SystemMaxUse=100M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
 11. `ca-certificates` - Common CA Certificates
     * CNNIC certificates has been removed for safety reasons
     * For more details, see `/etc/ca-certificates.conf`
