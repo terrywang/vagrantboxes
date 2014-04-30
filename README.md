@@ -19,21 +19,20 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
 - **Opscode** [**bento**](https://github.com/opscode/bento)
 
- We all know what **bento** means in Japanese, right? In this case, they are **NOT** lunch boxes **BUT** extremely handy base boxes which can be grabbed quickly to test cookbooks or private chef (Chef Server and Client).
-Distributions included: Ubuntu Server, Debian, CentOS and Fedora.
+ We all know what **bento** means in Japanese, right? In this case, they are **NOT** lunch boxes **BUT** handy base boxes which can be used to test cookbooks or anything you want. Distributions included: Ubuntu Server, Debian, CentOS and Fedora.
 
- Veewee definitions: https://github.com/opscode/bento
+ Packer definitions: https://github.com/opscode/bento
  
  > NOTE: To find hidden bento boxes, access the context root of the AWS S3 server;-)
 
 - [**Puppet Labs Vagrant Boxes**](http://puppet-vagrant-boxes.puppetlabs.com/)
  
- Pre-built vagrant boxes, ready for use. Made by the folks at Puppet Labs.
+ Pre-rolled vagrant boxes, ready for use. Made by the folks at Puppet Labs.
  
  Veewee definitions: https://github.com/puppetlabs/puppet-vagrant-boxes
 
 - [**Vagrant Ubuntu Cloud Images**](http://cloud-images.ubuntu.com/vagrant/)
 
- It's been there since Jan, 2013. For some reason Canonical has NOT officially promoted it yet, may be still in beta. Remember these are vanilla images, NOT very useful without Chef or Puppet.
+ It's been there since Jan, 2013. For some reason Canonical has NOT officially promoted it yet, may be still in beta. Remember these are vanilla images ONLY.
 
 If you are looking for Virtual Machines with server applications (e.g. GitLab, Discourse, WordPress, Redmine, Ruby Stack, Joomla!, Drupal etc…) pre-installed and configured, try Bitnami Stacks, it rocks!
