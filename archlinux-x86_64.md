@@ -36,7 +36,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `bash-completion`, `zsh` with `prezto`
     * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
-    * `sshfs`
+    * `sshfs`, `ddrescue`, `dd_rescue`
     * `ack`, `ag` (silver-searcher)
     * `colordiff`, `multitail`, `gawk`
     * `vim` with `Vundle.vim`
