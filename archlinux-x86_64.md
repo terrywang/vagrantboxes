@@ -2,18 +2,18 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `46b23e034b07d4278279a15a2a64e30b49472413380188018fa91316b806671c`
+* SHA256: `a1b4bc74161b7e5ffebf550dc454b66684ae928948ae3821427e6c3f10b88ca6`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.5.4 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.6.1 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of April 29, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of May 12, 2014. The base box is NOT affected by OpenSSL *heartbleed* bug - CVE-2014-0160 as openssl has been updated to 1.0.1g or later.
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `3.14.1-1-ARCH`
+2. Kernel: `3.14.3-1-ARCH`
 3. VirtualBox Guest Additions 4.3.10 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
 4. `yaourt` installed as the front end for AUR
 5. Users and passwords
