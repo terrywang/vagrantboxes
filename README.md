@@ -13,9 +13,9 @@ Veewee definitions are in [`veewee/definitions`](https://github.com/terrywang/va
 
 Additional list of places where you can get all sorts of vagrant base boxes for different purposes: development, testing, or even production.
 
-- [**vagrantboxe.es**](http://vagrantbox.es)
+- [**vagrantbox.es**](http://vagrantbox.es)
 
- A List of vagrant base boxes. Initiated by Gareth Rushgrove `@garethr` hosted on Heroku using Nginx. See the story here: [**The Vagrantboxe.es Story**](http://www.morethanseven.net/2012/07/01/The-vagrantbox.es-story/).
+ A List of vagrant base boxes. Initiated by Gareth Rushgrove `@garethr` hosted on Heroku using Nginx. See the story here: [**The Vagrantbox.es Story**](http://www.morethanseven.net/2012/07/01/The-vagrantbox.es-story/).
 
 - **Opscode** [**bento**](https://github.com/opscode/bento)
 
