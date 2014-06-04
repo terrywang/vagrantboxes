@@ -2,19 +2,19 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `1afc845cd491eee8877ebd31e7293023c2186cec0068cc72014569edb607df19`
+* SHA256: `7d86fa3f2830ab164e35fce985d0342f935fcad2cb361df42299823121b8f1f4`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.6.2 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.6.3 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 16 May, 2014 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 4 June, 2014 (UTC+10).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `3.14.4-1-ARCH`
-3. VirtualBox Guest Additions 4.3.10 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
+2. Kernel: `3.14.5-1-ARCH`
+3. VirtualBox Guest Additions 4.3.12 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
 4. `yaourt` installed as the front end for AUR
 5. Users and passwords
     * `root` / `vagrant`
