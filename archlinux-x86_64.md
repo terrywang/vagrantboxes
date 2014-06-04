@@ -4,7 +4,7 @@
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
 * SHA256: `7d86fa3f2830ab164e35fce985d0342f935fcad2cb361df42299823121b8f1f4`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Ubuntu 12.04 x86_64, guest additions installed. Packaged using Vagrant 1.6.3 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.10) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.3 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
@@ -38,7 +38,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
     * `sshfs`, `ddrescue`, `dd_rescue`
     * `ack`, `ag` (silver-searcher)
-    * `colordiff`, `multitail`, `gawk`
+    * `colordiff`, `multitail`, `gawk`, `stow`
     * `vim` with `Vundle.vim`
     * `ranger` (vim-like file manager)
     * `tmux` (with `~vagrant/.tmux.conf`), `reptyr` (reparent a running program to a new terminal)
