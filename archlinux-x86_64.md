@@ -8,7 +8,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 4 June, 2014 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 20 June, 2014 (UTC+10).
 
 ## Vagrant Base Box Information
 
@@ -37,13 +37,13 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
     * `sshfs`, `ddrescue`, `dd_rescue`
-    * `ack`, `ag` (silver-searcher)
+    * `ack`, `ag` (silver-searcher), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`
     * `vim` with `Vundle.vim`
     * `ranger` (vim-like file manager)
     * `tmux` (with `~vagrant/.tmux.conf`), `reptyr` (reparent a running program to a new terminal)
-    * `cowsay` and `octocatsay` for fun
-    * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `connect-proxy` (AUR)
+    * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
+    * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
 10. `systemd` Services (units) and journal size
