@@ -46,10 +46,11 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
-10. `systemd` Services (units) and journal size
+10. `systemd` services (units), journal size and core dumps
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
+    * **NOTE**: Since `systemd` **214**, core dumps are no longer sent to the journal by default. To re-enable: `echo "|/usr/lib/systemd/systemd-coredump %p %u %g %s %t %e" > /proc/sys/kernel/core_pattern`, to persist `echo "kernel.core_pattern=|/usr/lib/systemd/systemd-coredump %p %u %g %s %t %e" > /etc/sysctl.d/50-coredump.conf` and run `sysctl -p /etc/sysctl.d/50-coredump.conf`.
     * **NOTE**: `systemd` **journal size** has been limited to 100MB by setting `SystemMaxUse=100M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
 11. `ca-certificates` - Common CA Certificates
     * CNNIC certificates has been removed for safety reasons
