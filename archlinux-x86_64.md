@@ -2,19 +2,19 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `275e3d605046a04c10831c100d490a10b0965b629d068a006b615e1eba139aae`
+* SHA256: `d9c8027bd49a6053ed6c2f696bcf64a44dc1bb0b6a3b4688f04740a17c5c831b`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.12 (now 4.3.12) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.3 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 4.3.14) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.3 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 2 July, 2014 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 25 July, 2014 (UTC+10).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `3.15.2-1-ARCH`
-3. VirtualBox Guest Additions 4.3.12 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
+2. Kernel: `3.15.5-2-ARCH`
+3. VirtualBox Guest Additions 4.3.14 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
 4. `yaourt` installed as the front end for AUR
 5. Users and passwords
     * `root` / `vagrant`
@@ -43,7 +43,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ranger` (vim-like file manager)
     * `tmux` (with `~vagrant/.tmux.conf`), `reptyr` (reparent a running program to a new terminal)
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
-    * `ethtool`, `nethogs`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`
+    * `ethtool`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
 10. `systemd` services (units), journal size and core dumps
