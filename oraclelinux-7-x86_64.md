@@ -29,7 +29,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * `btrfs` support, `btrfs-progs` tools installed
     * In case more storage space is needed, create a new hard disk using `VBoxManage createhd`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
 7. Networking Mode - NAT
-    * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle64" --natpf1 "guestssh,tcp,,2222,,22"`
+    * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle70" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oraclelinux7.vagrantup.com`
 8. Extra packages installed
     * tmux (`~vagrant/.tmux.conf` based on [Gist](https://gist.github.com/terrywang/3950393))
@@ -41,7 +41,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * pv, tree, psmisc
     * wget, curl, gawk, ack
     * colordiff
-    * zsh (with prezto)
+    * zsh (with `prezto`)
     * bash-completion
     * net-tools, bind-utils, ethtool, iptraf, iftop, nmap
     * conntrack, iptstate
@@ -54,12 +54,12 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * firewalld.service (disabled)
     * kdump.service (disabled)
     * postfix.service (disabled)
-    * rhnsd
+    * rhnsd (off)
 10. SELinux is disabled. To re-enable it, edit `/etc/selinux/config` and reboot
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* `ruby 2.1.2` installed using `ruby-build`
+* `ruby` 2.1.2 installed using `ruby-build`
 * `chef` 11.12.8 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
 * Other gems => `bundler`, `rbenv-rehash`, `ruby-shadow`
