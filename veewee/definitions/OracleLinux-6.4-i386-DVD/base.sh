@@ -5,6 +5,7 @@ source ./proxy.sh
 sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
 
 cd /etc/yum.repos.d
+rm -f public-yum-ol6.repo
 wget https://public-yum.oracle.com/public-yum-ol6.repo
 yum -y update
 

@@ -5,6 +5,7 @@ source ./proxy.sh
 sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
 
 cd /etc/yum.repos.d
+rm -f public-yum-ol6.repo
 wget https://public-yum.oracle.com/public-yum-ol6.repo
 yum -y update
 
@@ -20,6 +21,6 @@ echo "UseDNS no" >> /etc/ssh/sshd_config
 
 sed -i "s/^HOSTNAME=.*/HOSTNAME=oracle.vagrantup.com/" /etc/sysconfig/network
 
-yum -y install gcc make gcc-c++ kernel-devel-`uname -r` \
-  kernel-uek-devel-`uname -r` zlib-devel openssl-devel \
+yum -y install gcc make gcc-c++ kernel-devel-$(uname -r) \
+    kernel-uek-devel-$(uname) -r zlib-devel openssl-devel \
   readline-devel sqlite-devel perl wget curl bzip2 dkms
