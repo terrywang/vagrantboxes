@@ -1,13 +1,13 @@
 # Veewee Definitions
 
-[Veewee](https://github.com/jedi4ever/veewee) definitions that can be used to automate the building of Oracle Linux {5,6} Vagrant Base Boxes.
+[Veewee](https://github.com/jedi4ever/veewee) definitions that can be used to automate the building of Oracle Linux {5,6,7} Vagrant Base Boxes.
 
-> **NOTE**: If veewee runs behind firewall and require proxy servers to access the Internet, uncomment and set proxy servers in `proxy.sh`.
+> **NOTE**: If running veewee behind firewall and require proxy servers to access the Internet, uncomment and set proxy servers in `proxy.sh`.
 
 ## Requirement
 
 * See Veewee [requirements](https://github.com/jedi4ever/veewee/blob/master/doc/requirements.md)
-* Ruby Version Manager like rbenv or RVM
+* Ruby Version Manager like `rbenv` or RVM
 * Virtualization Providers (e.g. VirtualBox)
 
 ## Usage
@@ -21,9 +21,9 @@ $ cd /path/to/workspace
 $ git clone https://github.com/jedi4ever/veewee.git
 $ cd veewee
 ```
-Run `bundle install` to install Gemfile dependencies
+Run `bundle install` to install dependencies specified in Gemfile
 
-**NOTE**: Install gem `rbenv-rehash` to avoid running `rbenv rehash` every time you install new gems.
+**NOTE**: Install gem `rbenv-rehash` to avoid running `rbenv rehash` every time you install new gems when using `rbenv`.
 
 ```bash
 $ gem install bundler
@@ -70,7 +70,7 @@ $ bundle exec veewee vbox build 'oraclelinux-6.4-x86_64'
 $ bundle exec veewee vbox build 'oraclelinux-6.4-x86_64' --debug
 ```
 
-> **Tip**: If you have already downloaded the DVD ISO files,  create symbolic links in `iso` directory to avoid repeated download and save time.
+> **Tip**: If you have already downloaded the DVD ISO files, create symbolic links in `iso` directory to avoid repeated download.
 
 Validate the build
 
