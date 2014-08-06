@@ -13,7 +13,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 1. Release: `Oracle Linux 7.0 x86_64`
 2. Kernels: UEK R3  => `3.8.13-35.3.1.el7uek.x86_64`, Red Hat Compatible Kernel => `3.10.0-123.4.4.el7.x86_64`
 2. VirtualBox Guest Additions 4.3.14 installed
-3. Default target `multiuser.target`, `/etc/inittab` is no longer used due to the switch to `systemd`.
+3. Default boot target => `multi-user.target`, `/etc/inittab` is no longer used due to the switch to `systemd`.
 4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 25 July, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
