@@ -15,24 +15,24 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
 2. Kernel: `3.15.5-2-ARCH`
 3. VirtualBox Guest Additions 4.3.14 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
-4. `yaourt` installed as the front end for AUR
-5. Users and passwords
+4. Default boot target => `multi-user.target`
+5. `yaourt` installed as the front end for AUR
+6. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` (Public Key authentication, password-less sudo)
-    * `systemd-journal-gateway` system user/group to run `systemd-journal-gatewayd`
-6. File Systems Layout
+7. File Systems Layout
     * Virtual Hard Disk Capacity 10GB, Dynamically allocated
     * `/dev/sda1` => `/` `ext4` 7.4GB
-    * `/dev/sda2` => `/home` `ext4` 2.0GB
+    * `/dev/sda2` => `/home` `ext4` 2.3GB
     * reserved blocks percentage: `/` => 0%, `/home` => 0%
     * In case more storage space is needed, create a new hard disk using `VBoxManage createhd`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
-7. Network NAT
+8. Network NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
     * Default hostname => `archlinux.vagrant.vm`
-    * Persists network interface from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`
-8. Kernel Parameters
+    * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme.
+9. Kernel Parameters
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent between reboots.
-9. Additional packages installed (including AUR)
+10. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`
     * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
@@ -46,7 +46,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ethtool`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`, `trickle`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
-10. `systemd` services (units), journal size and core dumps
+10. `systemd` services (unit files), journal size and core dumps
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
