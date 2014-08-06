@@ -36,14 +36,14 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `bash-completion`, `zsh` with `prezto`
     * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
-    * `sshfs`, `ddrescue`, `dd_rescue`
+    * `sshfs`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`
     * `ack`, `ag` (silver-searcher), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`
     * `vim` with `Vundle.vim`
     * `ranger` (vim-like file manager)
     * `tmux` (with `~vagrant/.tmux.conf`), `reptyr` (reparent a running program to a new terminal)
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
-    * `ethtool`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`
+    * `ethtool`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`, `trickle`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
 10. `systemd` services (units), journal size and core dumps
