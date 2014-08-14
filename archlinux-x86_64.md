@@ -26,10 +26,11 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `/dev/sda2` => `/home` `ext4` 2.3GB
     * reserved blocks percentage: `/` => 0%, `/home` => 0%
     * In case more storage space is needed, create a new hard disk using `VBoxManage createhd`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
-8. Network NAT
+8. Networking
+    * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
     * Default hostname => `archlinux.vagrant.vm`
-    * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme.
+    * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme. Alternatively, `net.ifnames=0` can be passed as kernel boot parameter to achieve the same, ever better.
 9. Kernel Parameters
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent between reboots.
 10. Additional packages installed (including AUR)
