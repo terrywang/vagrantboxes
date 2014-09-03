@@ -2,13 +2,13 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `7cb96a2f8a3693e1e9778144f6589f9cb153e181666e4491bbbfeb2e800f2500`
+* SHA256: `41454bb53c0068a2b36ea2c924e585efb2985b4bb9705cf861a5283d0fdf7485`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 4.3.14) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.3 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 4.3.14) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.4 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 20 August, 2014 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 3 September, 2014 (UTC+10).
 
 ## Vagrant Base Box Information
 
@@ -32,7 +32,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Default hostname => `archlinux.vagrant.vm`
     * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme. Alternatively, `net.ifnames=0` can be passed as kernel boot parameter to achieve the same, ever better.
 9. Kernel Parameters
-    * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent between reboots.
+    * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 10. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`
     * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
@@ -47,11 +47,11 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ethtool`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect-proxy`, `trickle`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
-10. `systemd` services (unit files), journal size and core dumps
+10. `systemd` services (unit files), journal size and core dump collection behavior
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
-    * **NOTE**: Since `systemd` **214**, core dumps are no longer sent to the journal by default. To re-enable: `echo "|/usr/lib/systemd/systemd-coredump %p %u %g %s %t %e" > /proc/sys/kernel/core_pattern`, to persist `echo "kernel.core_pattern=|/usr/lib/systemd/systemd-coredump %p %u %g %s %t %e" > /etc/sysctl.d/50-coredump.conf` and run `sysctl -p /etc/sysctl.d/50-coredump.conf`.
+    * **NOTE**: `systemd` **216** made changes to core dump again, collection behavior can now be tuned in `/etc/systemd/coredump.conf`. Core dumps are stored in `/var/lib/systemd/coredump` by setting `Storage=external`.
     * **NOTE**: `systemd` **journal size** has been limited to 100MB by setting `SystemMaxUse=100M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
 11. `ca-certificates` - Common CA Certificates
     * CNNIC certificates has been removed for safety reasons
