@@ -2,19 +2,19 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `41454bb53c0068a2b36ea2c924e585efb2985b4bb9705cf861a5283d0fdf7485`
+* SHA256: `a1a3c3a14d7b6cea5e867c222d8afc88960ee756c4dea717888b4b05701df864`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 4.3.14) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.4 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 4.3.16) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.6.5 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay bleeding edge. If shit happens and it breaks, time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 3 September, 2014 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 23 September, 2014 (UTC+10).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `3.16.1-1-ARCH`
-3. VirtualBox Guest Additions 4.3.14 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
+2. Kernel: `3.16.3-1-ARCH`
+3. VirtualBox Guest Additions 4.3.16 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
 4. Default boot target => `multi-user.target`
 5. `yaourt` installed as the front end for AUR
 6. Users and passwords
@@ -54,9 +54,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * **NOTE**: `systemd` **216** made changes to core dump again, collection behavior can now be tuned in `/etc/systemd/coredump.conf`. Core dumps are stored in `/var/lib/systemd/coredump` by setting `Storage=external`.
     * **NOTE**: `systemd` **journal size** has been limited to 100MB by setting `SystemMaxUse=100M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
 11. `ca-certificates` - Common CA Certificates
-    * CNNIC certificates has been removed for safety reasons
-    * For more details, see `/etc/ca-certificates.conf`
-    * DO NOT forget to run `update-ca-certificates` to apply the change.
+    * CNNIC and WoSign certificates have been removed for security reasons
+    * See `/etc/ca-certificates/conf.d/mozilla.conf` for more information. Use of `/etc/ca-certificates.conf` has been deprecated.
+    * Run `update-ca-certificates` to apply the change.
 
 ## Basic Software
 
