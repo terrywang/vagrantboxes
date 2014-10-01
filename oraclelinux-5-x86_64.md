@@ -1,20 +1,20 @@
 # Oracle Linux 5 x86_64 Base Box for Vagrant
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
-* Download: [Oracle Linux 5.10 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-5-x86_64.box)
-* SHA256: `c15529b843a33eb198cf240c49865312fbef9f01460719ffdd18a47be2ae00b4`
+* Download: [Oracle Linux 5.11 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-5-x86_64.box)
+* SHA256: `e96fda7999974d83b7ea6f6d1e76618cb11e6657298c7075b61933423c75390e`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.16 (now 4.3.4) on Ubuntu 12.04 x86_64, guest additions installed, packaged using Vagrant 1.2.2 (now 1.3.5).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.16 (now 4.3.16) on Linux x86_64, guest additions installed, packaged using Vagrant 1.2.2 (now 1.6.5).
 
-> **NOTE**: This Oracle Linux 5.10 base box can be updated to latest **5.x** minor releases (if there still is) once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free.
+> **NOTE**: This Oracle Linux 5.11 base box can be updated to future **5.x** minor releases (if there still is) once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free.
 
 ## Vagrant Base Box Information
 
-1. Release: `Oracle Linux 5.10 x86_64`
-2. Kernels: UEK2 => `2.6.39-400.211.2.el5uek`, Red Hat Compatible Kernel => `2.6.18-371.3.1.0.1.el5` 
-3. VirtualBox Guest Additions 4.3.4 installed
+1. Release: `Oracle Linux 5.11 x86_64`
+2. Kernels: UEK R2 => `2.6.39-400.215.10.el5uek`, Red Hat Compatible Kernel => `2.6.18-398.0.0.0.1.el5` 
+3. VirtualBox Guest Additions 4.3.16 installed
 4. Default run level 3 => `id:3:initdefault:`
-5. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 7 December, 2013. Simply run `yum update -y` as `root` to stay updated.
+5. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 30 September, 2014. Simply run `yum update -y` as `root` to stay updated.
 6. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -27,12 +27,13 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * `/dev/linux/swap` => `swap` 512MB
     * reserved blocks percentage: `/` => 0.1%, `/home` => 0%
     * In case more storage space is needed, create a new hard disk using `VBoxManage createhd`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
-8. Networking Mode - NAT
-    * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle510" --natpf1 "guestssh,tcp,,2222,,22"`
+8. Networking
+    * Networking mode - NAT
+    * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle511" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oracle.vagrantup.com`
 9. Extra packages installed
     * tmux (`~vagrant/.tmux.conf` based on [Gist](https://gist.github.com/terrywang/3950393))
-    * vim (`~/vimrc`)
+    * vim (`~/.vimrc`)
     * gdb
     * strace
     * rsync
@@ -60,20 +61,20 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* `ruby 1.9.3-p484` installed using `ruby-build`
-* `chef` 11.8.2 installed
+* `ruby 2.1.3` installed using `ruby-build`
+* `chef` 11.16.2 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
-* Other gems => `bundler`, `rbenv-rehash`, `ruby-shadow`
+* Other gems => `bundler`, `rbenv-rehash`
 
 ## Getting started
 
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add oraclelinux-5.10-x86_64 ADDRESS
+$ vagrant box add oraclelinux-5.11-x86_64 ADDRESS
 $ mkdir test_environment
 $ cd test_environment
-$ vagrant init oraclelinux-5.10-x86_64
+$ vagrant init oraclelinux-5.11-x86_64
 $ vagrant up
 $ vagrant ssh
 ```
