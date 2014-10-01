@@ -2,19 +2,19 @@
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
 * Download: [Oracle Linux 6.5 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-6-x86_64.box)
-* SHA256: `b799bf1de9dc4dd6ea2ab47bae5ddf8a6f369187018f603a8d10ea1f85b7c733`
+* SHA256: `a87285b4834dbf4c5439e4a02df837620827719da34b79a263be6d586fe5694e`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.4 (now 4.3.12) on Linux x86_64, guest additions installed, packaged using Vagrant 1.6.3 (initially 1.0.6).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.16 (now 4.3.12) on Linux x86_64, guest additions installed, packaged using Vagrant 1.6.5 (initially 1.0.6).
 
 > **NOTE**: This Oracle Linux 6.5 base box can be updated to latest **6.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 6.6 is made available, just run `yum update -y` and stay sharp. Enjoy!
 
 ## Vagrant Base Box Information
 
 1. Release: `Oracle Linux 6.5 x86_64`
-2. Kernels: UEK R3 update 2 => `3.8.13-35.1.2.el6uek.x86_64`, Red Hat Compatible Kernel => `2.6.32-431.20.3.el6.x86_64` 
-2. VirtualBox Guest Additions 4.3.12 installed
+2. Kernels: UEK R3 update 2 => `3.8.13-44.1.1.el6uek.x86_64`, Red Hat Compatible Kernel => `2.6.32-431.29.2.el6.x86_64` 
+2. VirtualBox Guest Additions 4.3.16 installed
 3. Default run level 3 => `id:3:initdefault:`
-4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 3 July, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 30 September, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -28,7 +28,8 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * reserved blocks percentage: `/` => 0.1%, `/home` => 0%
     * `btrfs` support, `btrfs-progs` tools installed
     * In case more storage space is needed, create a new hard disk using `VBoxManage createhd`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
-7. Networking Mode - NAT
+7. Networking
+    * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle65" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oracle.vagrantup.com`
 8. Extra packages installed
@@ -62,8 +63,8 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* `ruby 2.1.2` installed using `ruby-build`
-* `chef` 11.12.8 installed
+* `ruby 2.1.3` installed using `ruby-build`
+* `chef` 11.16.2 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
 * Other gems => `bundler`, `rbenv-rehash`, `ruby-shadow`
 
