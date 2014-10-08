@@ -2,7 +2,7 @@
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
 * Download: [Oracle Linux 6.5 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-6-x86_64.box)
-* SHA256: `a87285b4834dbf4c5439e4a02df837620827719da34b79a263be6d586fe5694e`
+* SHA256: `13a703956d6b00f6525c5ee9088fd2fbd714a5098d032f3c1e70fb79a530743d`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.16 (now 4.3.12) on Linux x86_64, guest additions installed, packaged using Vagrant 1.6.5 (initially 1.0.6).
 
@@ -14,7 +14,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 2. Kernels: UEK R3 update 2 => `3.8.13-44.1.1.el6uek.x86_64`, Red Hat Compatible Kernel => `2.6.32-431.29.2.el6.x86_64` 
 2. VirtualBox Guest Additions 4.3.16 installed
 3. Default run level 3 => `id:3:initdefault:`
-4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 30 September, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 8 October, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
