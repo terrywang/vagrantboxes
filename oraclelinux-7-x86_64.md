@@ -2,7 +2,7 @@
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
 * Download: [Oracle Linux 7.0 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
-* SHA256: `94e5942f726940046e99d076f015ac616df4c3f88973f82449a6645e6158507a`
+* SHA256: `eb38643d6ca91b11fa22e826b5a769a8f3fa89b3d74e5a37b3c3ec09a55632a0`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.16 on Linux x86_64, guest additions installed, packaged using Vagrant 1.6.5.
 
@@ -14,7 +14,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 2. Kernels: UEK R3  => `3.8.13-44.1.1.el7uek.x86_64`, Red Hat Compatible Kernel => `3.10.0-123.8.1.el7.x86_64`
 2. VirtualBox Guest Additions 4.3.16 installed
 3. Default boot target => `multi-user.target`, `/etc/inittab` is **no longer** used due to the switch to `systemd`.
-4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 1 October, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 8 October, 2014 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
