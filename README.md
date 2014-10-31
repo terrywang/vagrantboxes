@@ -5,8 +5,8 @@ vagrantboxes
 
 List of boxes
 
-- Oracle Linux 5.10 x86_64
-- Oracle Linux 6.5 x86_64
+- Oracle Linux 5.11 x86_64
+- Oracle Linux 6.6 x86_64
 - Oracle Linux 7.0 x86_64
 - Arch Linux x86_64
 
