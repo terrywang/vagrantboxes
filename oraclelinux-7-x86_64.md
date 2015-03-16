@@ -58,6 +58,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * postfix.service (disabled)
     * rhnsd (off)
 10. SELinux is disabled. To re-enable it, edit `/etc/selinux/config` and reboot
+11. Optional [debuginfo](https://oss.oracle.com/ol7/debuginfo) repository added, disabled by default. Enable by editing `/etc/yum.repos.d/debuginfo.repo`
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
