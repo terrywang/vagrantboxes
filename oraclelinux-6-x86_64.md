@@ -2,7 +2,7 @@
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
 * Download: [Oracle Linux 6.7 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-6-x86_64.box)
-* SHA256: `708485a96eb7cafa20ba25281ae89b70308f023617ed526da88fccbc40b96431`
+* SHA256: `8a31d23b094a3c57e5f1fbf7aabbe417fe17b2afab84c8e78c1620a15febbd65`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.18 (now 5.0.0) on Linux x86_64, guest additions installed, packaged using Vagrant 1.7.4 (initially 1.0.6).
 
