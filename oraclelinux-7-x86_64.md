@@ -1,20 +1,20 @@
 # Oracle Linux 7 x86_64 Base Box for Vagrant
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
-* Download: [Oracle Linux 7.1 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
-* SHA256: `972039f392b13874a06d6f180e490be89a4254eedc9dc0847d5850861512fea3`
+* Download: [Oracle Linux 7.2 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
+* SHA256: `42fcfa62521b91235180b6c4437f73148a6a1aaf6abccaa2c54d906f9d91c551`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 on Linux x86_64, guest additions installed, packaged using Vagrant 1.7.2.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 (now 5.0.10) on Linux x86_64, guest additions installed, packaged using Vagrant 1.7.4.
 
-> **NOTE**: This Oracle Linux 7.1 base box can be updated to latest **7.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 7.2 is made available, just run `yum update -y` and stay sharp. Enjoy!
+> **NOTE**: This Oracle Linux 7.2 base box can be updated to latest **7.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 7.3 is made available, just run `yum update -y` and stay sharp. Enjoy!
 
 ## Vagrant Base Box Information
 
-1. Release: `Oracle Linux 7.1 x86_64`
-2. Kernels: UEK R3  => `kernel-uek-3.8.13-55.1.8.el7uek.x86_64`, Red Hat Compatible Kernel => `kernel-3.10.0-229.el7.x86_64`
-2. VirtualBox Guest Additions 4.3.24 installed
+1. Release: `Oracle Linux 7.2 x86_64`
+2. Kernels: UEK R3  => `kernel-uek-3.8.13-118.2.2.el7uek.x86_64`, Red Hat Compatible Kernel => `kernel-3.10.0-327.3.1.el7.x86_64`
+2. VirtualBox Guest Additions 5.0.10 installed
 3. Default boot target => `multi-user.target`, `/etc/inittab` is **NO LONGER** used due to the switch to `systemd`.
-4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 16 March, 2015 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 18 December, 2015 (UTC+11). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -62,8 +62,8 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* `ruby` 2.2.1 installed using `ruby-build`
-* `chef` 12.1.1 installed
+* `ruby` 2.2.4 installed using `ruby-build`
+* `chef` 12.5.1 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
 * Other gems => `bundler`, `rbenv-rehash`
 
@@ -72,10 +72,10 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add oraclelinux-7.1-x86_64 ADDRESS
+$ vagrant box add oraclelinux-7-x86_64 ADDRESS
 $ mkdir test_environment
 $ cd test_environment
-$ vagrant init oraclelinux-7.1-x86_64
+$ vagrant init oraclelinux-7-x86_64
 $ vagrant up
 $ vagrant ssh
 ```
