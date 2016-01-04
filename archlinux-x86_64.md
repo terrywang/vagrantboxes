@@ -35,8 +35,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 10. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`
-    * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`
+    * `htop`, `dstat`, `glances`, `smem`, `inxi`, `lsof`, `fatrace`
     * `coreutils`, `moreutils`, `inetutils`, `dnsutils`, `pv`
+    * `sharutils`, `makeself`
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`
     * `ack`, `ag` (silver-searcher), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`
