@@ -1,4 +1,4 @@
-#!/bin/bash - 
+#!/bin/bash
 # Initial provisioning shell script
 # For CentOS and Oracle Linux 7
 
