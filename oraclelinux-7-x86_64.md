@@ -2,19 +2,19 @@
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
 * Download: [Oracle Linux 7.2 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
-* SHA256: `42fcfa62521b91235180b6c4437f73148a6a1aaf6abccaa2c54d906f9d91c551`
+* SHA256: `8b48478481624747fd5506a2f6bde1f09c3ba8bba53da1fa72d352c17bf71cb4`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 (now 5.0.10) on Linux x86_64, guest additions installed, packaged using Vagrant 1.7.4.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 (now 5.0.12) on Linux x86_64, guest additions installed, packaged using Vagrant 1.8.1.
 
 > **NOTE**: This Oracle Linux 7.2 base box can be updated to latest **7.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 7.3 is made available, just run `yum update -y` and stay sharp. Enjoy!
 
 ## Vagrant Base Box Information
 
 1. Release: `Oracle Linux 7.2 x86_64`
-2. Kernels: UEK R3  => `kernel-uek-3.8.13-118.2.2.el7uek.x86_64`, Red Hat Compatible Kernel => `kernel-3.10.0-327.3.1.el7.x86_64`
-2. VirtualBox Guest Additions 5.0.10 installed
+2. Kernels: UEK R4  => `kernel-uek-4.1.12-32.el7uek.x86_64`, Red Hat Compatible Kernel => `kernel-3.10.0-327.4.4.el7.x86_64`
+2. VirtualBox Guest Additions 5.0.12 installed
 3. Default boot target => `multi-user.target`, `/etc/inittab` is **NO LONGER** used due to the switch to `systemd`.
-4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 18 December, 2015 (UTC+11). Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 12 January, 2016 (UTC+11). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -55,7 +55,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * sshd.service (enabled)
     * firewalld.service (disabled)
     * kdump.service (disabled)
-    * postfix.service (disabled)
+    * postfix.service (enabled)
     * rhnsd (off)
 10. SELinux is disabled. To re-enable it, edit `/etc/selinux/config` and reboot
 11. Optional [debuginfo](https://oss.oracle.com/ol7/debuginfo) repository added, disabled by default. Enable by editing `/etc/yum.repos.d/debuginfo.repo`
@@ -63,7 +63,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
 * `ruby` 2.2.4 installed using `ruby-build`
-* `chef` 12.5.1 installed
+* `chef` 12.6.0 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
 * Other gems => `bundler`, `rbenv-rehash`
 
