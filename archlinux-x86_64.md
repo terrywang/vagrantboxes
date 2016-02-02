@@ -2,19 +2,19 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `8974cc527547d263c0a3e9615cac8e423a7dfbc2627bc4a0917e0d7087dcc54b`
+* SHA256: `1d3e44aa7c3aa185b9cdede84ce45d465745b1e21e4bc18ba5856c088cdb6897`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.0.12) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.8.1 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.0.14) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.8.1 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 4 January, 2016 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 2 February, 2016 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `4.3.3-2-ARCH`
-3. VirtualBox Guest Additions 5.0.12 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
+2. Kernel: `4.3.3-3-ARCH`
+3. VirtualBox Guest Additions 5.0.14 installed using packages: `virtualbox-guest-{dkms,modules,utils}`
 4. Default boot target => `multi-user.target`
 5. `yaourt` installed as the front end for AUR
 6. Users and passwords
@@ -46,6 +46,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `tmux` (with `~vagrant/.tmux.conf`), `reptyr` (reparent a running program to a new terminal)
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
     * `ethtool`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`
+    * `ipcalc`, `bwm-ng`, `whois`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `gdb`
 10. `systemd` services (unit files), journal size and core dump collection behavior
