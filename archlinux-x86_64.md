@@ -2,9 +2,9 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `a14db52ec1a64b5331e8fde51e1bc4b895d6189830354e96823c3de6b1c0530b`
+* SHA256: `bfa4a23789ad8c08dcdb6501720d23ce0ab9967a6fa9c98fd8810fb876463858`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.0.16) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.8.1 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.1.18) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.9.3 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills;-)
 
@@ -13,8 +13,8 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `4.5.0-1-ARCH`
-3. VirtualBox Guest Additions 5.0.16 installed using packages: `virtualbox-guest-{dkms,utils}`
+2. Kernel: `4.10.6-1-ARCH`
+3. VirtualBox Guest Additions 5.1.18 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
 5. `yaourt` installed as the front end for AUR
 6. Users and passwords
