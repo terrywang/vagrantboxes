@@ -41,7 +41,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`
     * `ack`, `ag` (silver-searcher), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`
-    * `vim` with `Vundle.vim`
+    * `vim` with `Vundle.vim` and `EditorConfig`
     * `ranger` (vim-like file manager)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal)
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
@@ -50,17 +50,20 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ipcalc`, `bwm-ng`, `whois`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `ltrace`, `gdb`, `binwalk`
-10. `systemd` services (unit files), journal size and core dump collection behavior
+11. `systemd` services (unit files), journal size and core dump collection behavior
     * sshd.service (enabled)
     * dhcpcd.service (enabled)
     * vboxservice.service (enabled)
     * haveged.service (enabled)
     * **NOTE**: `systemd` **216**+ made changes to core dump again, collection behavior can now be tuned in `/etc/systemd/coredump.conf`. Core dumps are stored in `/var/lib/systemd/coredump` by setting `Storage=external`.
     * **NOTE**: `systemd` **journal size** has been limited to 100MB by setting `SystemMaxUse=100M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
-11. `ca-certificates` - Common CA Certificates
-    * CNNIC and WoSign certificates have been blacklisted for security reasons
+12. `ca-certificates` - Common CA Certificates
+    * CNNIC and WoSign certificates (6 in total) have been blacklisted for security reasons, see `/etc/ca-certificates/trust-source/blacklist/`.
     * See `man 8 update-ca-trust` for more information. Use of `/etc/ca-certificates.conf` has been deprecated.
     * Use `update-ca-trust` and `trust` to apply changes.
+13. Misc
+    * Security hardened OpenSSH SSH client configuration can be found in `~terry/.ssh/config`.
+    * `sysstat` with `SADC_OPTIONS="-S XALL"` set in `/etc/conf.d/syssat`.
 
 ## Basic Software
 
