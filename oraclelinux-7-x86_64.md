@@ -30,7 +30,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * In case more storage space is needed, create a new hard disk using `VBoxManage createhd`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
 7. Networking
     * Networking mode - NAT
-    * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle71" --natpf1 "guestssh,tcp,,2222,,22"`
+    * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle7" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oraclelinux7.vagrantup.com`
     * For people who prefer the old NIC naming scheme (`ethX` instead of more predictable enpXsY), pass `net.ifnames=0` as kernel boot parameter to revert to old style.
 8. Extra packages installed
