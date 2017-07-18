@@ -1,20 +1,20 @@
 # Oracle Linux 7 x86_64 Base Box for Vagrant
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
-* Download: [Oracle Linux 7.2 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
-* SHA256: `8b48478481624747fd5506a2f6bde1f09c3ba8bba53da1fa72d352c17bf71cb4`
+* Download: [Oracle Linux 7.3 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
+* SHA256: `62d606025008fe1f69c942f6868ebb3ce6ff02ea1ba64c0b9cbaf0473adef028`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 (now 5.0.12) on Linux x86_64, guest additions installed, packaged using Vagrant 1.8.1.
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 (now 5.1.22) on Linux x86_64, guest additions installed, packaged using Vagrant 1.9.7.
 
-> **NOTE**: This Oracle Linux 7.2 base box can be updated to latest **7.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 7.3 is made available, just run `yum update -y` and stay sharp. Enjoy!
+> **NOTE**: This Oracle Linux 7.3 base box can be updated to latest **7.x** minor releases once it is made available via Oracle's Public YUM Server. You also get package updates and errata for free. For example, once Oracle Linux 7.4 is made available, just run `yum update -y` and stay sharp. Enjoy!
 
 ## Vagrant Base Box Information
 
-1. Release: `Oracle Linux 7.2 x86_64`
-2. Kernels: UEK R4  => `kernel-uek-4.1.12-32.el7uek.x86_64`, Red Hat Compatible Kernel => `kernel-3.10.0-327.4.4.el7.x86_64`
-2. VirtualBox Guest Additions 5.0.12 installed
+1. Release: `Oracle Linux 7.3 x86_64`
+2. Kernels: UEK R4  => `kernel-uek-4.1.12-94.3.9.el7uek.x86_64`, Red Hat Compatible Kernel => `kernel-3.10.0-514.26.2.el7.x86_64`
+2. VirtualBox Guest Additions 5.1.22 installed
 3. Default boot target => `multi-user.target`, `/etc/inittab` is **NO LONGER** used due to the switch to `systemd`.
-4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 12 January, 2016 (UTC+11). Simply run `yum update -y` as `root` to stay updated.
+4. **Public YUM** and **EPEL** configured, system up-to-date (**packages** and **errata**) as of 18 July, 2017 (UTC+10). Simply run `yum update -y` as `root` to stay updated.
 5. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` Public Key authentication configured for vagrant, password-less sudo
@@ -32,38 +32,39 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
     * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "oracle71" --natpf1 "guestssh,tcp,,2222,,22"`
     * Hostname => `oraclelinux7.vagrantup.com`
-    * For people who prefer the old NIC naming scheme (ethX instead of more predictable enpXsY), pass `net.ifnames=0` as kernel boot parameter to revert to old style.
+    * For people who prefer the old NIC naming scheme (`ethX` instead of more predictable enpXsY), pass `net.ifnames=0` as kernel boot parameter to revert to old style.
 8. Extra packages installed
-    * tmux (`~vagrant/.tmux.conf` based on [Gist](https://gist.github.com/terrywang/3950393))
-    * vim (with `Vundle.vim`, see `~/.vimrc`)
-    * gdb, strace, crash
-    * git, tig 
-    * rsync
-    * htop
-    * pv, tree, psmisc
-    * wget, curl, gawk, ack
-    * colordiff
-    * zsh (with `prezto`)
-    * bash-completion
-    * net-tools, bind-utils, ethtool, iptraf, iftop, nmap
-    * conntrack, iptstate
-    * lshw, pciutils, usbutils
-    * reptyr, ntsysv, yum-utils
-    * sl
-    * screenfetch (shell script)
+    * `tmux` (`~vagrant/.tmux.conf` based on [Gist](https://gist.github.com/terrywang/3950393))
+    * `vim` (with `Vundle.vim`, see `~/.vimrc`)
+    * `gdb`, `strace`, `crash`, `ltrace`
+    * `git`, `tig`, `colordiff`
+    * `rsync`, `fdupes`
+    * `htop`, `dstat`, `glances`, `smem`, `lsof`, `iotop`
+    * `coreutils`, `moreutils`, `net-tools` (`inetutils`), `bind-utils`
+    * `pv`, `tree`, `psmisc`
+    * `wget`, `curl`, `gawk`, `ack`, `ag` (`the_silver_searcher`)
+    * `zsh` (with `prezto`), `bash-completion`
+    * `ethtool`, `iptraf`, `iperf3`, `iftop`, `nmap`
+    * `bmon`, `tcpdump`, `nfs-utils`, `fuse-sshfs`
+    * `conntrack`, `iptstate`
+    * `lshw`, `pciutils`, `usbutils`
+    * `reptyr`, `ntsysv`, `yum-utils`
+    * `sl`
+    * `neofetch` (shell script)
 9. systemd services
     * sshd.service (enabled)
     * firewalld.service (disabled)
     * kdump.service (disabled)
     * postfix.service (enabled)
+    * sysstat.service (enabled)
     * rhnsd (off)
 10. SELinux is disabled. To re-enable it, edit `/etc/selinux/config` and reboot
 11. Optional [debuginfo](https://oss.oracle.com/ol7/debuginfo) repository added, disabled by default. Enable by editing `/etc/yum.repos.d/debuginfo.repo`
 
 ## Basic Software
 * `rbenv` installed in `~vagrant/.rbenv`
-* `ruby` 2.2.4 installed using `ruby-build`
-* `chef` 12.6.0 installed
+* `ruby` 2.4.1 installed using `ruby-build`
+* `chef` 13.2.20 installed
 * Puppet YUM repository configured and enabled. To install puppet master run `yum install puppet-server`, to install puppet on agent nodes run `yum install puppet`, to configure, check [Configuring Puppet](http://docs.puppetlabs.com/guides/configuring.html)
 * Other gems => `bundler`, `rbenv-rehash`
 
