@@ -1,7 +1,7 @@
 # Oracle Linux 7 x86_64 Base Box for Vagrant
 
 * Project: [VagrantBoxes@GitHub](https://github.com/terrywang/vagrantboxes)
-* Download: [Oracle Linux 7.3 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
+* Download: Vagrant Cloud `vagrant init terrywang/oraclelinux-7-x86_64` or [Oracle Linux 7.3 x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/oraclelinux-7-x86_64.box)
 * SHA256: `62d606025008fe1f69c942f6868ebb3ce6ff02ea1ba64c0b9cbaf0473adef028`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.3.24 (now 5.1.22) on Linux x86_64, guest additions installed, packaged using Vagrant 1.9.7.
@@ -73,10 +73,9 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add oraclelinux-7-x86_64 ADDRESS
 $ mkdir test_environment
 $ cd test_environment
-$ vagrant init oraclelinux-7-x86_64
+$ vagrant init terrywang/oraclelinux-7-x86_64
 $ vagrant up
 $ vagrant ssh
 ```
