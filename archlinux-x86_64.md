@@ -1,6 +1,7 @@
 # Arch Linux x86_64 Base Box for Vagrant
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
+* Use this box with Vagrant: `vagrant init terrywang/archlinux && vagrant up` 
 * Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
 * SHA256: `991ed460ce657fc7f2ded7419a6ddeca3c76d8a75c3bb5e9a782ceeb5426e927`
 
@@ -78,10 +79,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 Download the base box and get the box started
 
 ```bash
-$ vagrant box add archlinux-x86_64 ADDRESS
 $ mkdir test_environment
 $ cd test_environment
-$ vagrant init archlinux-x86_64
+$ vagrant init terrywang/archlinux
 $ vagrant up
 $ vagrant ssh
 ```
