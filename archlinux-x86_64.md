@@ -2,7 +2,7 @@
 
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use this box with Vagrant: `vagrant init terrywang/archlinux && vagrant up` 
-* Download: [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
+* Alternative (Direct Download): [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
 * SHA256: `991ed460ce657fc7f2ded7419a6ddeca3c76d8a75c3bb5e9a782ceeb5426e927`
 
 This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.1.22) on Linux x86_64, guest additions installed. Packaged using Vagrant 1.9.7 (initially 1.3.4).
