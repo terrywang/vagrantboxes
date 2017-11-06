@@ -40,7 +40,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`, `pv`
     * `sharutils`, `makeself`
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `entr`
-    * `ack`, `ag` (silver-searcher), `cloc`
+    * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`, `jq`, `fdupes`
     * `vim` with `Vundle.vim` and `EditorConfig`
     * `ranger`, `vifm` (vim-like file managers)
