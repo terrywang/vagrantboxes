@@ -3,19 +3,19 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use this box with Vagrant: `vagrant init terrywang/archlinux && vagrant up` 
 * Alternative (Direct Download): [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `f6c74c13972ca1e839a48c1543bb020b13c3c11e3ede0da3bbd17ed63b5f7588`
+* SHA256: `30cd6908192edc7398c856280c838cd6a9c35540d23ef9ecb1ac64271f8cc4ad`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.1.28) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.0.0 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.2.0) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.0.1 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 6 October, 2017 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 6 November, 2017 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `4.13.3-1-ARCH`
-3. VirtualBox Guest Additions 5.1.28 installed using packages: `virtualbox-guest-{dkms,utils}`
+2. Kernel: `4.13.11-1-ARCH`
+3. VirtualBox Guest Additions 5.2.0 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
 5. `yaourt` installed as the front end for AUR
 6. Users and passwords
@@ -46,7 +46,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ranger`, `vifm` (vim-like file managers)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal)
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
-    * `ethtool`, `iftop`, `nethogs`, `iperf`, `corkscrew`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `hping`
+    * `ethtool`, `iftop`, `nethogs`, `iperf`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `hping`
     * `conntrack-tools`, `iptstate`, `nftables`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `ltrace`, `gdb`, `binwalk`
