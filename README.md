@@ -26,7 +26,7 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
  
  > NOTE: To find hidden bento boxes, access the context root of the AWS S3 server;-)
 
-- [**Puppet Labs Vagrant Boxes**](http://puppet-vagrant-boxes.puppetlabs.com/)
+- [**Official Puppet Vagrant Boxes**](https://app.vagrantup.com/puppetlabs)
  
  Pre-rolled vagrant boxes, ready for use. Made by the folks at Puppet Labs.
  
@@ -36,4 +36,4 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
  It's been there since Jan, 2013. For some reason Canonical has NOT officially promoted it yet, may be still in beta. Remember these are vanilla images ONLY.
 
-If you are looking for Virtual Machines with server applications (e.g. GitLab, Discourse, WordPress, Redmine, Ruby Stack, Joomla!, Drupal etc…) pre-installed and configured, try Bitnami Stacks, it rocks!
+If you are looking for Virtual Machines with server applications (e.g. GitLab, Discourse, WordPress, Redmine, Ruby Stack, Joomla!, Drupal etc…) pre-installed and configured, try Bitnami Stacks.
