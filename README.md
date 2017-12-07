@@ -18,6 +18,10 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
  A List of vagrant base boxes. Initiated by Gareth Rushgrove `@garethr` hosted on Heroku using Nginx. See the story here: [**The Vagrantbox.es Story**](http://www.morethanseven.net/2012/07/01/The-vagrantbox.es-story/).
 
+- [**Official Oracle Linux Vagrant Boxes**](http://yum.oracle.com/boxes)
+
+Official Oracle Linux Vagrant Boxes, HTTPS won't work for now, `openssl` CLI can tell you why ;-)
+
 - **Opscode** [**bento**](https://github.com/opscode/bento)
 
  We all know what **bento** means in Japanese, right? In this case, they are **NOT** lunch boxes **BUT** handy base boxes which can be used to test cookbooks or anything you want. Distributions included: Ubuntu Server, Debian, CentOS and Fedora.
