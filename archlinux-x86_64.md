@@ -67,7 +67,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * See `man 8 update-ca-trust` for more information. Use of `/etc/ca-certificates.conf` has been deprecated.
     * Use `update-ca-trust` and `trust` to apply changes.
 13. Misc
-    * Security hardened OpenSSH SSH client configuration can be found in `~terry/.ssh/config`.
+    * Security hardened OpenSSH SSH client configuration can be found in `~terry/.ssh/config`. See -> [Secure Enhannced OpenSSH client configuration](https://gist.github.com/terrywang/a4239989b79d34f4160b) for information.
     * `sysstat` with `SADC_OPTIONS="-S XALL"` set in `/etc/conf.d/syssat`.
 
 ## Basic Software
