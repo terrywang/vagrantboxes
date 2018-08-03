@@ -3,19 +3,19 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use this box with Vagrant: `vagrant init terrywang/archlinux && vagrant up` 
 * Alternative (Direct Download): [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `795aa6b0ed57631c94888697bde709572fcdad6dd11f19256c7f58f45fa7372b`
+* SHA256: `13cf777e264b6a78eb9ae03f5c470b4822b4532ac2313b0b84ad7c12715f569a`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.2.12) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.1.1 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 5.2.16) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.1.2 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 21 June, 2018 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 3 August, 2018 (UTC+10).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `4.17.2-1-ARCH`
-3. VirtualBox Guest Additions 5.2.12 installed using packages: `virtualbox-guest-{dkms,utils}`
+2. Kernel: `4.17.11-1-ARCH`
+3. VirtualBox Guest Additions 5.2.16 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
 5. `yaourt` installed as the front end for AUR
 6. Users and passwords
