@@ -36,7 +36,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 10. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`
-    * `htop`, `dstat`, `glances`, `iotop`, `ioping`, `smem`, `inxi`, `lsof`, `fatrace`, `schedtool`
+    * `htop`, `gotop`, `dstat`, `glances`, `iotop`, `ioping`, `smem`, `inxi`, `lsof`, `fatrace`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`, `pv`
     * `sharutils`, `makeself`
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `entr`
@@ -52,6 +52,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `strace`, `ltrace`, `gdb`, `binwalk`
     * `audit`, `lynis`, `ssh-audit`
     * `srm`, `wipe`
+    * `wireguard`
     * `sysstat`, `collectl`
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
