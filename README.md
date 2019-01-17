@@ -5,10 +5,10 @@ vagrantboxes
 
 List of boxes
 
-- Oracle Linux 5.11 x86_64
-- Oracle Linux 6.9 x86_64
-- Oracle Linux 7.3 x86_64
 - Arch Linux x86_64
+- Oracle Linux 7.6 x86_64
+- ~~Oracle Linux 6.9 x86_64~~
+- ~~Oracle Linux 5.11 x86_64~~
 
 Veewee definitions are in [`veewee/definitions`](https://github.com/terrywang/vagrantboxes/tree/master/veewee/definitions) to automate the building of Vagrant Base Boxes;-) Check its [README.md](https://github.com/terrywang/vagrantboxes/blob/master/veewee/README.md) for usage.
 
