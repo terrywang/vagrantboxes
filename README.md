@@ -22,11 +22,11 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
 Now that Oracle provides official Vagrant Boxes, we should simply leverage those.
 
-- **Opscode** [**bento**](https://github.com/opscode/bento)
+- **Chef** [**bento**](https://github.com/chef/bento)
 
  We all know what **bento** means in Japanese, right? In this case, they are **NOT** lunch boxes **BUT** handy base boxes which can be used to test cookbooks or anything you want. Distributions included: Ubuntu Server, Debian, CentOS and Fedora.
 
- Packer definitions: https://github.com/opscode/bento
+ Packer definitions: https://github.com/chef/bento
  
  > NOTE: To find hidden bento boxes, access the context root of the AWS S3 server;-)
 
