@@ -18,9 +18,9 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
  A List of vagrant base boxes. Initiated by Gareth Rushgrove `@garethr` hosted on Heroku using Nginx. See the story here: [**The Vagrantbox.es Story**](http://www.morethanseven.net/2012/07/01/The-vagrantbox.es-story/).
 
-- [**Official Oracle Linux Vagrant Boxes**](http://yum.oracle.com/boxes)
+- [**Official Oracle Linux Vagrant Boxes**](https://yum.oracle.com/boxes)
 
-Official Oracle Linux Vagrant Boxes, HTTPS won't work for now, `openssl` CLI can tell you why ;-)
+Now that Oracle provides official Vagrant Boxes, we should simply leverage those.
 
 - **Opscode** [**bento**](https://github.com/opscode/bento)
 
