@@ -28,7 +28,7 @@ Now that Oracle provides official Vagrant Boxes, we should simply leverage those
 
  Packer definitions: https://github.com/chef/bento
  
- > NOTE: To find hidden bento boxes, access the context root of the AWS S3 server;-)
+ > NOTE: To find hidden bento boxes, access the context root of the AWS S3 server.
 
 - [**Official Puppet Vagrant Boxes**](https://app.vagrantup.com/puppetlabs)
  
@@ -36,8 +36,10 @@ Now that Oracle provides official Vagrant Boxes, we should simply leverage those
  
  Veewee definitions: https://github.com/puppetlabs/puppet-vagrant-boxes
 
-- [**Vagrant Ubuntu Cloud Images**](http://cloud-images.ubuntu.com/vagrant/)
+- [**Ubuntu Cloud Images**](https://cloud-images.ubuntu.com)
 
- It's been there since Jan, 2013. For some reason Canonical has NOT officially promoted it yet, may be still in beta. Remember these are vanilla images ONLY.
+ It's been there since Jan, 2013. To get latest LTS, 18.04 bionic in this case, simply use the URL: [https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box)
 
+> NOTE: OVA, Azure/Hyper-V VHD, VMware VMDK, KVM img, LXD images are also available for supported architectures.
+ 
 If you are looking for Virtual Machines with server applications (e.g. GitLab, Discourse, WordPress, Redmine, Ruby Stack, Joomla!, Drupal etc…) pre-installed and configured, try Bitnami Stacks.
