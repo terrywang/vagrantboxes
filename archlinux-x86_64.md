@@ -36,6 +36,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 10. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`, `fish`
+    * `fzf`, `autojump`
     * `htop`, `gotop`, `dstat`, `glances`, `iotop`, `ioping`, `smem`, `inxi`, `lsof`, `fatrace`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`, `pv`
     * `sharutils`, `makeself`
@@ -46,8 +47,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ranger`, `vifm` (vim-like file managers)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal)
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
-    * `ethtool`, `iftop`, `nethogs`, `iperf`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `hping`
+    * `ethtool`, `iftop`, `nethogs`, `iperf`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
     * `conntrack-tools`, `iptstate`, `nftables`
+    * `tcpdump`, `scapy`
     * `dmidecode`, `lshw`, `hwinfo`
     * `strace`, `ltrace`, `gdb`, `binwalk`
     * `audit`, `lynis`, `ssh-audit`
