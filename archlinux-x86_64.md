@@ -55,6 +55,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `strace`, `ltrace`, `gdb`, `binwalk`
     * `audit`, `lynis`, `ssh-audit`
     * `srm`, `wipe`
+    * `duc` a collection of tools for inspecting and visualising disk usage
     * `wireguard`
     * `sysstat`, `collectl`
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
