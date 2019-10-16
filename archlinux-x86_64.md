@@ -26,7 +26,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `/dev/sda1` => `/` `ext4` 20GB
     * ~~`/dev/sda2` => `/home` `ext4` 2.3GB~~
     * reserved blocks percentage: `/` => 0%, ~~`/home` => 0%~~
-    * In case more storage space is needed, refer to [issue #23](https://github.com/terrywang/vagrantboxes/issues/23) to resize the virtual hard disk and then resize partition/grow file system. Alternatively, create a new virtual hard disk using `VBoxManage createmedium`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.
+    * In case more storage space is needed, refer to [issue #23](https://github.com/terrywang/vagrantboxes/issues/23) to resize the virtual hard disk and then resize partition and grow the filesystem. ~~Alternatively, create a new virtual hard disk using `VBoxManage createmedium`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.~~
 8. Networking
     * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
