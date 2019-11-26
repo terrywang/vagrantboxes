@@ -3,19 +3,19 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use this box with Vagrant: `vagrant init terrywang/archlinux && vagrant up` 
 * Alternative (Direct Download): [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `7499d440c418cc1540b3d7b165716aa05a163534a338c1a605f882f3abe687a5`
+* SHA256: `c8ab5a6ea1ca7cfe7e8bc2e8a7f17c72ed6e81588ff697ff90f6876159640dd9`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.0.12) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.6 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.0.14) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.6 (initially 1.3.4).
 
-This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills;-)
+This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 16 October, 2019 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 26 November, 2019 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.3.6-arch1-1-ARCH`
-3. VirtualBox Guest Additions 6.0.12 installed using packages: `virtualbox-guest-{dkms,utils}`
+2. Kernel: `5.3.13-arch1-1`
+3. VirtualBox Guest Additions 6.0.14 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
 5. `yaourt` installed as the front end for AUR
 6. Users and passwords
@@ -74,6 +74,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 13. Misc
     * Security hardened OpenSSH SSH client configuration can be found in `~terry/.ssh/config`. See -> [Secure Enhannced OpenSSH client configuration](https://gist.github.com/terrywang/a4239989b79d34f4160b) for information.
     * `sysstat` with `SADC_OPTIONS="-S XALL"` set in `/etc/conf.d/syssat`.
+    * `pacman` 5.2 switched compression algorithm from `xz` to `zstd` for faster compression and decompression, while maintaining a compression ratio comparable with `xz`. Default package file extension is `.pkg.tar.zst`. 
 
 ## Basic Software
 
