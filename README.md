@@ -12,7 +12,9 @@ List of boxes currently maintainted
 - ~~Oracle Linux 6.9 x86_64~~
 - ~~Oracle Linux 5.11 x86_64~~
 
-> Initial intention was to package my favourite `Arch Linux` virtual machine as Vagrant box, which can then be easily dropped into development and ops workflows. Over time, this practice has evolve into a collection of: 1. must-have packages 2. best practice and 3. important and/or notable changes for the distros
+> Initial intention was to package my favourite `Arch Linux` virtual machine as Vagrant box as building blocks, which can then be easily dropped into development and `Ops` workflows & pipelines.
+>
+> Over time, this practice has evolved into a collection of: 1. must-have packages 2. best practice and 3. important and/or notable changes for the distros
 
 Veewee definitions are in [`veewee/definitions`](https://github.com/terrywang/vagrantboxes/tree/master/veewee/definitions) to automate the building of Vagrant Base Boxes;-) Check its [README.md](https://github.com/terrywang/vagrantboxes/blob/master/veewee/README.md) for usage.
 
