@@ -17,7 +17,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 2. Kernel: `5.3.13-arch1-1`
 3. VirtualBox Guest Additions 6.0.14 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
-5. `yaourt` installed as the front end for AUR
+5. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
 6. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` (Public Key authentication, password-less sudo)
