@@ -76,7 +76,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Security hardened OpenSSH SSH client configuration can be found in `~terry/.ssh/config`. See -> [Secure Enhannced OpenSSH client configuration](https://gist.github.com/terrywang/a4239989b79d34f4160b) for information.
     * `sysstat` with `SADC_OPTIONS="-S XALL"` set in `/etc/conf.d/syssat`.
     * `pacman` 5.2 switched compression algorithm from `xz` to `zstd` for faster compression and decompression, while maintaining a compression ratio comparable with `xz`. Default package file extension is `.pkg.tar.zst`. 
-    * Since `systemd` 243 `systemd-resolved` has been configured for DNS Privacy using DNS over TLS (DoH). However, the service is NOT enabled by default due to `systemd-resolved`'s limited `resolvconf` interface. To enable, `systemd-resolvconf` needs to replace `openresolv`.
+    * Since `systemd` 243 `systemd-resolved` has been configured for DNS Privacy using DNS over TLS (DoT). However, the service is NOT enabled by default due to `systemd-resolved`'s limited `resolvconf` interface. To enable, `systemd-resolvconf` needs to replace `openresolv`.
 
 ## Basic Software
 
