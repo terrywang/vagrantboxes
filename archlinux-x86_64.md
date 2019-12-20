@@ -47,8 +47,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `nnn` (snappy file manager for ninjas, type less, do more, way faster)
     * `ranger`, `vifm` (vim-like file managers), `fff` (simple file manager writtent in bash)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal)
-    * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, `fortune-mod` and `linux_logo` for fun
+    * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, and `fortune-mod` for fun
     * `ethtool`, `iftop`, `nethogs`, `iperf`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
+    * `kdig` provided by `knot` for advanced DNS lookup, specifically for DNS over TLS (DoT)
     * `conntrack-tools`, `iptstate`, `nftables`
     * `tcpdump`, `scapy`
     * `dmidecode`, `lshw`, `hwinfo`
