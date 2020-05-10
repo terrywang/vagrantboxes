@@ -5,16 +5,17 @@ vagrantboxes
 
 # Distros
 
-List of boxes currently maintainted
+List of boxes currently maintained
 
 - Arch Linux x86_64
-- Oracle Linux 7.6 x86_64
+- ~~Fedora 32 (to be added)~~
+- ~~Oracle Linux 7.6 x86_64~~
 - ~~Oracle Linux 6.9 x86_64~~
 - ~~Oracle Linux 5.11 x86_64~~
 
 > Initial intention was to package my favourite `Arch Linux` virtual machine as Vagrant box as building blocks, which can then be easily dropped into development and `Ops` workflows & pipelines.
 >
-> Over time, this practice has evolved into a collection of: 1. must-have packages 2. best practice and 3. important and/or notable changes for the distros
+> Over time, this practice has evolved into a collection of: 1. must-have (or good to have) packages 2. best practice and 3. important and/or notable changes for these distros
 
 Veewee definitions are in [`veewee/definitions`](https://github.com/terrywang/vagrantboxes/tree/master/veewee/definitions) to automate the building of Vagrant Base Boxes;-) Check its [README.md](https://github.com/terrywang/vagrantboxes/blob/master/veewee/README.md) for usage.
 
@@ -32,15 +33,15 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
 - **Chef** [**bento**](https://github.com/chef/bento)
 
-  We all know what **bento** means in Japanese, right? In this case, they are **NOT** lunch boxes **BUT** handy base boxes (and packer templates) which can be used to test cookbooks or anything you want. Distributions included: Ubuntu Server, Debian, CentOS and Fedora.
-
-- [**Official Puppet Vagrant Boxes**](https://app.vagrantup.com/puppetlabs)
-
-  Pre-rolled vagrant boxes, ready for use. Made by the folks at Puppet Labs. Veewee definitions: https://github.com/puppetlabs/puppet-vagrant-boxes
+  We all know what **bento** means in Japanese, right? In this case, they are **NOT** lunch boxes **BUT** handy base boxes (and packer templates) which can be used to test cookbooks or anything you want. Distributions included: Fedora, Ubuntu Server, Debian, CentOS and Amazon Linux.
 
 - [**Ubuntu Cloud Images**](https://cloud-images.ubuntu.com)
 
   It's been there since Jan, 2013. To get latest LTS, 18.04 bionic in this case, simply use the URL: [https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box)
   > NOTE: OVA, Azure/Hyper-V VHD, VMware VMDK, KVM img, LXD images are also available for supported architectures.
+
+- [**Fedora Cloud Base Images for Vagrant**](https://alt.fedoraproject.org/cloud/)
+  
+  Fedora Server (minimal install) base images for Vagrant. Available for VirtualBox and `libvirt/KVM`.
  
 Have fun!
