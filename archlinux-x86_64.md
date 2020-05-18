@@ -3,19 +3,19 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use this box with Vagrant: `vagrant init terrywang/archlinux && vagrant up` 
 * Alternative (Direct Download): [Arch Linux x86_64 Vagrant Base Box](http://cloud.terry.im/vagrant/archlinux-x86_64.box)
-* SHA256: `8c53f18e1c0ad5ffad12bdc125be14a8f4a0a296b5abf35650e1a65cd52d09ea`
+* SHA256: `9d1c709be594916bee07eba27727343eb836b18c41b0cfc5b1a15bf90b5e1633`
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.0) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.6 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.8) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.9 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 20 December, 2019 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 18 May, 2020 (UTC+10).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.4.5-arch1-1`
-3. VirtualBox Guest Additions 6.1.0 installed using packages: `virtualbox-guest-{dkms,utils}`
+2. Kernel: `5.6.13`
+3. VirtualBox Guest Additions 6.1.8 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
 5. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
 6. Users and passwords
@@ -30,7 +30,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 8. Networking
     * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
-    * Default hostname => `archlinux.vagrant.vm`
+    * Default hostname => `vagrant.band.it`
     * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme. Alternatively, `net.ifnames=0` can be passed as kernel boot parameter to achieve the same, even better.
 9. Kernel Parameters
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
