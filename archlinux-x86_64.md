@@ -17,24 +17,25 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 2. Kernel: `5.6.13`
 3. VirtualBox Guest Additions 6.1.8 installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
-5. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
-6. Users and passwords
+5. System timezone set to `UTC` via the modern systemd `timedatectl set-timezone UTC`
+6. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
+7. Users and passwords
     * `root` / `vagrant`
     * `vagrant` / `vagrant` (Public Key authentication, password-less sudo)
-7. File Systems Layout
+8. File Systems Layout
     * Virtual Hard Disk Capacity 20GB, Dynamically allocated
     * `/dev/sda1` => `/` `ext4` 20GB
     * ~~`/dev/sda2` => `/home` `ext4` 2.3GB~~
     * reserved blocks percentage: `/` => 0%, ~~`/home` => 0%~~
     * In case more storage space is needed, refer to [issue #23](https://github.com/terrywang/vagrantboxes/issues/23) to resize the virtual hard disk and then resize partition and grow the filesystem. ~~Alternatively, create a new virtual hard disk using `VBoxManage createmedium`, attach it using `VBoxManage storageattach`. Then create a physical volume using the new HDD, add it to existing volume group, either grow existing logical volumes or create new ones, as you wish.~~
-8. Networking
+9. Networking
     * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
     * Default hostname => `vagrant.band.it`
     * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme. Alternatively, `net.ifnames=0` can be passed as kernel boot parameter to achieve the same, even better.
-9. Kernel Parameters
+10. Kernel Parameters
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
-10. Additional packages installed (including AUR)
+11. Additional packages installed (including AUR)
     * `bash-completion`, `zsh` with `prezto`, `fish`
     * `fzf`, `autojump`, `direnv`
     * `htop`, `gotop`, `dstat`, `glances`, `iotop`, `ioping`, `smem`, `inxi`, `lsof`, `fatrace`, `schedtool`
@@ -61,18 +62,18 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `sysstat`, `collectl`
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
-11. `systemd` (now `244`) services (unit files), journal size and core dump collection behavior
+12. `systemd` (now `245`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
     * `dhcpcd.service` (enabled)
     * `vboxservice.service` (enabled)
     * `haveged.service` (enabled)
     * **NOTE**: `systemd` **216**+ made changes to core dump again, collection behavior can now be tuned in `/etc/systemd/coredump.conf`. Core dumps are stored in `/var/lib/systemd/coredump` by setting `Storage=external`.
     * **NOTE**: `systemd` **journal size** has been limited to 100MB by setting `SystemMaxUse=100M` in `/etc/systemd/journald.conf`. By default it is set to 10% of the size of the respective file system.
-12. `ca-certificates` - Common CA Certificates
+13. `ca-certificates` - Common CA Certificates
     * CNNIC and WoSign certificates (6 in total) have been blacklisted for security reasons, see `/etc/ca-certificates/trust-source/blacklist/`.
     * See `man 8 update-ca-trust` for more information. Use of `/etc/ca-certificates.conf` has been deprecated.
     * Use `update-ca-trust` and `trust` to apply changes.
-13. Misc
+14. Misc
     * Security hardened OpenSSH SSH client configuration can be found in `~terry/.ssh/config`. See -> [Secure Enhannced OpenSSH client configuration](https://gist.github.com/terrywang/a4239989b79d34f4160b) for information.
     * `sysstat` with `SADC_OPTIONS="-S XALL"` set in `/etc/conf.d/syssat`.
     * `pacman` 5.2 switched compression algorithm from `xz` to `zstd` for faster compression and decompression, while maintaining a compression ratio comparable with `xz`. Default package file extension is `.pkg.tar.zst`. 
