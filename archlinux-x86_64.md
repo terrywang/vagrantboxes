@@ -48,7 +48,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`, `fdupes`
     * `jq`, `gron`
-    * `vim` with `Vundle.vim` and `EditorConfig`
+    * `vim` with `vim-plug` (minimalist Vim plugin manager) and `EditorConfig`
     * `nnn` (snappy file manager for ninjas, type less, do more, way faster)
     * `ranger`, `vifm` (vim-like file managers), `fff` (simple file manager writtent in bash)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal), `detach`
