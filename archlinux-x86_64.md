@@ -34,20 +34,26 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 10. Kernel Parameters
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 11. Additional packages installed (including AUR)
-    * `bash-completion`, `zsh` with `prezto`, `fish`
-    * `fzf`, `autojump`, `direnv`
-    * `htop`, `gotop`, `dstat`, `glances`, `iotop`, `ioping`, `smem`, `inxi`, `lsof`, `fatrace`, `schedtool`
-    * `coreutils`, `moreutils`, `inetutils`, `bind-tools`, `pv`
+    * `bash-completion`, `zsh`, `fish`
+    * `fzf`, `fpp`, `autojump`, `direnv`
+    * `htop`, `dstat`, `glances`, `inxi`
+    * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `schedtool`
+    * `coreutils`, `moreutils`, `inetutils`, `bind-tools`
+    *  **modern utils**: `procs`, `fd` (`find` alternative written in Rust), `exa` (`ls` replacement written in Rust), `ytop`, `bandwhich`, `topgrade` (on top of upgrade)
+    * `pv` (monitor the progress of data through a pipe)
+    * `progress` (coreutils progress viewer)
+    * `up` (Ultimate Plumber for pipes), `peco` (simplistic interactive filtering tool)
     * `sharutils`, `makeself`
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `entr`
     * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`
-    * `colordiff`, `multitail`, `gawk`, `stow`, `jq`, `fdupes`
+    * `colordiff`, `multitail`, `gawk`, `stow`, `fdupes`
+    * `jq`, `gron`
     * `vim` with `Vundle.vim` and `EditorConfig`
     * `nnn` (snappy file manager for ninjas, type less, do more, way faster)
     * `ranger`, `vifm` (vim-like file managers), `fff` (simple file manager writtent in bash)
-    * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal)
+    * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal), `detach`
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, and `fortune-mod` for fun
-    * `ethtool`, `iftop`, `nethogs`, `iperf`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
+    * `ethtool`, `iftop`, `nethogs`, `iperf3`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
     * `kdig` provided by `knot` for advanced DNS lookup, specifically for DNS over TLS (DoT)
     * `conntrack-tools`, `iptstate`, `nftables`
     * `tcpdump`, `scapy`
@@ -56,7 +62,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `audit`, `lynis`, `ssh-audit`
     * `srm`, `wipe`
     * `duc` a collection of tools for inspecting and visualising disk usage
-    * `wireguard`
+    * `wireguard-tools`
     * `sysstat`, `collectl`
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
