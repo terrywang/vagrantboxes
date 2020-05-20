@@ -48,6 +48,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`
     * `colordiff`, `multitail`, `gawk`, `stow`, `fdupes`
     * `jq`, `gron`
+    * `xsv` (CSV CLI toolkit written in Rust)
     * `vim` with `vim-plug` (minimalist Vim plugin manager) and `EditorConfig`
     * `nnn` (snappy file manager for ninjas, type less, do more, way faster)
     * `ranger`, `vifm` (vim-like file managers), `fff` (simple file manager writtent in bash)
@@ -64,6 +65,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `duc` a collection of tools for inspecting and visualising disk usage
     * `wireguard-tools`
     * `sysstat`, `collectl`
+    * `symlinks` (symbolic link maintenance utility)
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
 12. `systemd` (now `245`) services (unit files), journal size and core dump collection behavior
