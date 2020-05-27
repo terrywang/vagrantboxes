@@ -29,7 +29,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 9. Networking
     * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
-    * Default hostname => `vagrant.band.it`
+    * Default hostname => `arch.band.it`
     * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme. Alternatively, `net.ifnames=0` can be passed as kernel boot parameter to achieve the same, even better.
 10. Kernel Parameters
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
@@ -45,7 +45,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `up` (Ultimate Plumber for pipes), `peco` (simplistic interactive filtering tool)
     * `sharutils`, `makeself`
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `entr`
-    * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`
+    * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`, `tokei`
     * `colordiff`, `multitail`, `gawk`, `stow`, `fdupes`
     * `jq`, `gron`
     * `xsv` (CSV CLI toolkit written in Rust)
@@ -54,7 +54,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ranger`, `vifm` (vim-like file managers), `fff` (simple file manager writtent in bash)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal), `detach`
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, and `fortune-mod` for fun
-    * `ethtool`, `iftop`, `nethogs`, `iperf3`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
+    * `ethtool`, `iftop`, `nethogs`, `iperf3`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `dropwatch`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
     * `kdig` provided by `knot` for advanced DNS lookup, specifically for DNS over TLS (DoT)
     * `conntrack-tools`, `iptstate`, `nftables`
     * `tcpdump`, `scapy`
