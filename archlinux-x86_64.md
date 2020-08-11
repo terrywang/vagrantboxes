@@ -3,19 +3,19 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use it: `vagrant init terrywang/archlinux && vagrant up` 
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.8) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.9 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.12) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.9 (initially 1.3.4).
 
-This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and the system breaks, it's time to test your troubleshooting skills ;-)
+This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 26 May, 2020 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 9 August, 2020 (UTC+10).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.6.14`
-3. VirtualBox Guest Additions 6.1.8 installed using packages: `virtualbox-guest-{dkms,utils}`
+2. Kernel: `5.7.12`
+3. VirtualBox Guest Additions `6.1.12` installed using packages: `virtualbox-guest-{dkms,utils}`
 4. Default boot target => `multi-user.target`
-5. System timezone set to `UTC` via the modern systemd `timedatectl set-timezone UTC`
+5. System timezone set to `UTC` via `systemd`'s `timedatectl set-timezone UTC`
 6. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
 7. Users and passwords
     * `root` / `vagrant`
@@ -68,7 +68,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `symlinks` (symbolic link maintenance utility)
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
-12. `systemd` (now `245`) services (unit files), journal size and core dump collection behavior
+12. `systemd` (now `246`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
     * `dhcpcd.service` (enabled)
     * `vboxservice.service` (enabled)
