@@ -36,7 +36,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 11. Additional packages installed (including AUR)
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
     * `fzf`, `fpp`, `autojump`, `direnv`
-    * `htop`, `dstat`, `glances`, `inxi`, `ytop`, `bashtop`
+    * `htop`, `dstat`, `glances`, `inxi`, `ytop`, `bashtop`, `bpytop`
     * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`
     *  **modern utils**: `procs`, `fd` (`find` alternative written in Rust), `exa` (`ls` replacement written in Rust), `ytop`, `bandwhich`, `topgrade` (on top of upgrade)
