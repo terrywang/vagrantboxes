@@ -35,11 +35,11 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 11. Additional packages installed (including AUR)
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
-    * `fzf`, `fpp`, `autojump`, `direnv`
+    * `fzf`, ~~`fpp`~~, `autojump`, `direnv`
     * `htop`, `dstat`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, `bpytop`
-    * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `schedtool`
+    * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `ftop`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`
-    *  **modern utils**: `procs`, `fd` (`find` alternative written in Rust), `exa` (`ls` replacement written in Rust), `ytop`, `bandwhich`, `topgrade` (on top of upgrade)
+    *  **modern utils**: `procs`, `fd` (`find` alternative written in Rust), `exa` (`ls` replacement written in Rust), `bottom`, `bandwhich`, `topgrade` (on top of upgrade), see `/root/modern_utils.md` for more details
     * `pv` (monitor the progress of data through a pipe)
     * `progress` (coreutils progress viewer)
     * `up` (Ultimate Plumber for pipes), `peco` (simplistic interactive filtering tool)
