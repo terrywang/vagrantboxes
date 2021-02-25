@@ -37,6 +37,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
     * `fzf`, ~~`fpp`~~, `autojump`, `direnv`
     * `htop`, `dstat`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, `bpytop`
+    * `vmtouch`
     * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `ftop`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`
     *  **modern utils**: `procs`, `fd` (`find` alternative written in Rust), `exa` (`ls` replacement written in Rust), `bottom`, `bandwhich`, `topgrade` (on top of upgrade), see `/root/modern_utils.md` for more details
