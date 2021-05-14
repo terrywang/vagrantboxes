@@ -34,6 +34,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 10. Kernel parameters at runtime
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 11. Additional packages installed (including AUR)
+     * **`TL;DR`** decoupled the list of modern utils (and productivity tools) to a separately managed `-->` [**`modern_utils`**](https://sites.google.com/site/imterry/modernutils) wiki page ;-)
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
     * `fzf`, ~~`fpp`~~, `autojump`, `direnv`
     * `htop`, `dstat`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, `bpytop`
