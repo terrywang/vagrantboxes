@@ -30,7 +30,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * Networking mode - NAT
     * Port forwarding configured for NAT => `VBoxManage modifyvm "archlinux" --natpf1 "guestssh,tcp,,2222,,22"`
     * Default hostname => `arch.band.it`
-    * NIC name changed from `enp0s3` to `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. For those who are so used to the old naming scheme. Alternatively, `net.ifnames=0` can be passed as kernel boot parameter to achieve the same, even better.
+    * NIC name changed from Predictable Network Interface name `enp0s3` to traditional `eth0` using udev rule => `/etc/udev/rules.d/66-persistent-net.rules`. Alternatively, `net.ifnames=0` can be passed as kernel command line parameter at boot for those who prefer traditional names.
 10. Kernel parameters at runtime
     * Due to the deprecation of `/etc/sysctl.conf`, `/etc/sysctl.d/99-sysctl.conf` has been added to make kernel parameters persistent across reboots.
 11. Additional packages installed (including AUR)
