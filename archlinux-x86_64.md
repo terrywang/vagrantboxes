@@ -7,12 +7,12 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 13 May, 2021 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 7 July, 2021 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.12.3`
+2. Kernel: `5.12.14`
 3. VirtualBox Guest Additions `6.1.22` installed using packages: `virtualbox-guest-utils`
 4. Default boot target => `multi-user.target`
 5. System timezone set to `UTC` via `systemd`'s `timedatectl set-timezone UTC`
@@ -70,7 +70,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `symlinks` (symbolic link maintenance utility)
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
-12. `systemd` (now `246`) services (unit files), journal size and core dump collection behavior
+12. `systemd` (now `248`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
     * `dhcpcd.service` (enabled)
     * `vboxservice.service` (enabled)
