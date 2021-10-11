@@ -3,16 +3,16 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use it: `vagrant init terrywang/archlinux && vagrant up` 
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.26) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.16 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.26) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.2.18 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 26 August, 2021 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 11 October, 2021 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.13.12`
+2. Kernel: `5.14.10`
 3. VirtualBox Guest Additions `6.1.26` installed using packages: `virtualbox-guest-utils`
 4. Default boot target => `multi-user.target`
 5. System timezone set to `UTC` via `systemd`'s `timedatectl set-timezone UTC`
@@ -37,7 +37,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
      * **`TL;DR`** decoupled the list of modern utils (and productivity tools) to a separately managed `-->` [**`modern_utils`**](https://sites.google.com/site/imterry/modernutils) wiki page ;-)
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
     * `fzf`, ~~`fpp`~~, `autojump`, `direnv`
-    * `htop`, `dstat`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, `bpytop`
+    * `htop`, `dstat`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, ~~`bpytop`~~, `btop`
     * `vmtouch`
     * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `ftop`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`
@@ -46,7 +46,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `progress` (coreutils progress viewer)
     * `up` (Ultimate Plumber for pipes), `peco` (simplistic interactive filtering tool)
     * `sharutils`, `makeself`
-    * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `entr`
+    * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `duf`, `entr`
     * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`, `tokei`
     * `colordiff`, `multitail`, `gawk`, `stow`, `fdupes`
     * `jq`, `gron`
@@ -67,6 +67,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `duc` a collection of tools for inspecting and visualising disk usage
     * `wireguard-tools`
     * `sysstat`, `collectl`
+    * `sysz` an fzf terminal UI for systemctl
     * `symlinks` (symbolic link maintenance utility)
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
