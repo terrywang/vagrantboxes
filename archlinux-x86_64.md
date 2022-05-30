@@ -12,7 +12,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.17.5`
+2. Kernel: `5.18
 3. VirtualBox Guest Additions `6.1.34` installed using packages: `virtualbox-guest-utils`
 4. Default boot target => `multi-user.target`
 5. System timezone set to `UTC` via `systemd`'s `timedatectl set-timezone UTC`
@@ -47,7 +47,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `up` (Ultimate Plumber for pipes), `peco` (simplistic interactive filtering tool)
     * `sharutils`, `makeself`
     * `sshfs`, `nfs-utils`, `ddrescue`, `dd_rescue`, `gptfdisk`, `parted`, `ncdu`, `duf`, `entr`
-    * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `cloc`, `tokei`
+    * `ack`, `ag` (silver-searcher), `rg` (ripgrep), `locate` (`plocate`), `cloc`, `tokei`
     * `colordiff`, `multitail`, `gawk`, `stow`, `fdupes`
     * `jq`, `gron`
     * `xsv` (CSV CLI toolkit written in Rust)
