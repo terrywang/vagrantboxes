@@ -3,17 +3,17 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use it: `vagrant init terrywang/archlinux && vagrant up` 
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 6.1.36) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.3.0 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 7.0.2) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.3.2 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 17 August, 2022 (UTC+10).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 31 October, 2022 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `5.19`
-3. VirtualBox Guest Additions `6.1.36` installed using packages: `virtualbox-guest-utils`
+2. Kernel: `6.0`
+3. VirtualBox Guest Additions `7.0.2` installed using packages: `virtualbox-guest-utils`
 4. Default boot target => `multi-user.target`
 5. System timezone set to `UTC` via `systemd`'s `timedatectl set-timezone UTC`
 6. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
@@ -71,7 +71,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `symlinks` (symbolic link maintenance utility)
     * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
-12. `systemd` (now `250`) services (unit files), journal size and core dump collection behavior
+12. `systemd` (now `251`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
     * `dhcpcd.service` (enabled)
     * `vboxservice.service` (enabled)
