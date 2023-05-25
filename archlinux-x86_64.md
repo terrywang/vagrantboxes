@@ -69,7 +69,8 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `sysstat`, `collectl`
     * `sysz` an fzf terminal UI for systemctl
     * `symlinks` (symbolic link maintenance utility)
-    * `asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)
+    * ~~`asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)~~
+    * `pkgctl` replaces `asp` as per [Git migration completed](https://archlinux.org/news/git-migration-completed/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
 12. `systemd` (now `253`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
