@@ -64,7 +64,9 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `strace`, `ltrace`, `gdb`, `binwalk`
     * `audit`, `lynis`, `ssh-audit`
     * `srm`, `wipe`
-    * `duc` a collection of tools for inspecting and visualising disk usage
+    * `duc` - a collection of tools for inspecting and visualising disk usage
+    * `diskonaut` - Terminal disk space navigator in Rust
+    * `ncdu` (Ncurses `du`), `duf` (a better `df` in Go)
     * `wireguard-tools`
     * `sysstat`, `collectl`
     * `sysz` an fzf terminal UI for systemctl
