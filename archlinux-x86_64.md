@@ -7,7 +7,7 @@ This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initi
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 23 November, 2023 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 8 January, 2024 (UTC+11).
 
 ## Vagrant Base Box Information
 
@@ -37,7 +37,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
      * **`TL;DR`** decoupled the list of modern utils (and productivity tools) to a separately managed `-->` [**`modern_utils`**](https://sites.google.com/site/imterry/modernutils) wiki page ;-)
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
     * `fzf`, ~~`fpp`~~, `autojump`, `direnv`
-    * `htop`, `dstat`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, ~~`bpytop`~~, `btop`
+    * `htop`, ~~`dstat`~~, `dool`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, ~~`bpytop`~~, `btop`
     * `vmtouch`
     * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `ftop`, `schedtool`
     * `coreutils`, `moreutils`, `inetutils`, `bind-tools`
@@ -74,7 +74,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * ~~`asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)~~
     * `pkgctl` replaces `asp` as per [Git migration completed](https://archlinux.org/news/git-migration-completed/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
-12. `systemd` (now `254`) services (unit files), journal size and core dump collection behavior
+12. `systemd` (now `255`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
     * `dhcpcd.service` (enabled)
     * `vboxservice.service` (enabled)
