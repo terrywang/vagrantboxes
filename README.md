@@ -37,7 +37,7 @@ Additional list of places where you can get all sorts of vagrant base boxes for 
 
 - [**Ubuntu Cloud Images**](https://cloud-images.ubuntu.com)
 
-  It's been there since Jan, 2013. To get latest LTS, 18.04 bionic in this case, simply use the URL: [https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box)
+  It's been there since Jan, 2013. To get latest LTS, 21.10 bionic in this case, simply use the URL: [https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box)
   > NOTE: OVA, Azure/Hyper-V VHD, VMware VMDK, KVM img, LXD images are also available for supported architectures.
 
 - [**Fedora Cloud Base Images for Vagrant**](https://alt.fedoraproject.org/cloud/)
