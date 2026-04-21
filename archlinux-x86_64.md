@@ -3,17 +3,17 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use it: `vagrant init terrywang/archlinux && vagrant up` 
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 7.0.18) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.4.0 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 7.2.) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.4.9 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
-> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 8 January, 2024 (UTC+11).
+> **NOTE**: In November 2012, Arch Linux switched to `systemd` as its default init system. In January 2013 `initsripts` was removed from its official repositories. The base box is up-to-date as of 21 April, 2026 (UTC+11).
 
 ## Vagrant Base Box Information
 
 1. Release: Installed using `archlinux-2013.02.01-dual.iso`
-2. Kernel: `6.9`
-3. VirtualBox Guest Additions `7.0.18` installed using packages: `virtualbox-guest-utils`
+2. Kernel: `6.19`
+3. VirtualBox Guest Additions `7.2.6` installed using packages: `virtualbox-guest-utils`
 4. Default boot target => `multi-user.target`
 5. System timezone set to `UTC` via `systemd`'s `timedatectl set-timezone UTC`
 6. `yay` - Yet Another Yogurt replaces `yaourt` as new AUR helper
@@ -36,7 +36,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 11. Additional packages installed (including AUR)
      * **`TL;DR`** decoupled the list of modern utils (and productivity tools) to a separately managed `-->` [**`modern_utils`**](https://sites.google.com/site/imterry/modernutils) wiki page ;-)
     * `bash-completion`, `zsh`, `fish` + [`Oh My Fish`](https://github.com/oh-my-fish/oh-my-fish)
-    * `fzf`, ~~`fpp`~~, `autojump`, `direnv`
+    * `fzf`, ~~`fpp`~~, `zoxide`, `direnv`
     * `htop`, ~~`dstat`~~, `dool`, `glances`, `inxi`, `bottom`, ~~`bashtop`~~, ~~`bpytop`~~, `btop`
     * `vmtouch`
     * `iotop`, `ioping`, `smem`, `lsof`, `fatrace`, `ftop`, `schedtool`
@@ -56,7 +56,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * `ranger`, `vifm` (vim-like file managers), `fff` (simple file manager writtent in bash)
     * `tmux` (with [`~/.tmux.conf`](https://gist.github.com/terrywang/3950393)), `reptyr` (reparent a running program to a new terminal), `detach`
     * `sl`, `figlet`, `cowsay`, `ponysay`, `octocatsay`, and `fortune-mod` for fun
-    * `ethtool`, `iftop`, `nethogs`, `iperf3`, `corkscrew`, `sslh`, `netcat`, `socat`, `nmap`, `ngrep`, `dropwatch`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
+    * `ethtool`, `iftop`, `nethogs`, `iperf3`, `corkscrew`, ~~`sslh`~~, `netcat`, `socat`, `nmap`, `ngrep`, `dropwatch`, `connect`, `trickle`, `ipcalc`, `bwm-ng`, `whois`, `bmon`, `dhcping`, `fping`, `hping`
     * `kdig` provided by `knot` for advanced DNS lookup, specifically for DNS over TLS (DoT)
     * `conntrack-tools`, `iptstate`, `nftables`
     * `tcpdump`, `scapy`
@@ -74,7 +74,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
     * ~~`asp` as drop-in replacement for `abs` as per [Deprecation of ABS tool and rsync endpoint](https://www.archlinux.org/news/deprecation-of-abs/)~~
     * `pkgctl` replaces `asp` as per [Git migration completed](https://archlinux.org/news/git-migration-completed/)
     * `pkgfile` a ALPM (`pacman`) .files metadata explorer
-12. `systemd` (now `255`) services (unit files), journal size and core dump collection behavior
+12. `systemd` (now `260`) services (unit files), journal size and core dump collection behavior
     * `sshd.service` (enabled)
     * `dhcpcd.service` (enabled)
     * `vboxservice.service` (enabled)
@@ -94,7 +94,7 @@ This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual
 
 ## Basic Software
 
-**NOT** like the Oracle Linux base boxes, Ruby, Chef and Puppet are **NOT** pre-installed so as to make the box as slim as possible. With the rise of Ansible, its agent-less model is preferred in most cases, end of story. `rbenv` + `ruby-build`, `pyenv`, `nvm`, `goenv` and `rustup` are **recommended** to manage respective toolchain.
+**NOT** like the Oracle Linux base boxes, Ruby, Chef and Puppet are **NOT** pre-installed so as to make the box as slim as possible. With the rise of Ansible, its agent-less model is preferred in most cases, end of story. `rbenv` + `ruby-build`, ~~`pyenv`~~, `uv`, `nvm`, `goenv` and `rustup` are **recommended** to manage respective toolchain.
 
 ## Getting started
 
