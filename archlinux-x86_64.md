@@ -3,7 +3,7 @@
 * Project: [Vagrantboxes](https://github.com/terrywang/vagrantboxes)
 * Use it: `vagrant init terrywang/archlinux && vagrant up` 
 
-This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 7.2.) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.4.9 (initially 1.3.4).
+This is a minimal base box built for [Vagrant](http://www.vagrantup.com/). Initially created using VirtualBox 4.2.2 (now 7.2.6) on Linux x86_64, guest additions installed. Packaged using Vagrant 2.4.9 (initially 1.3.4).
 
 This `Arch Linux` x86_64 base box was built using the `archlinux-2013.02.01-dual.iso`. Arch Linux is a **rolling release** so just run `pacman -Syu` to stay cutting edge. If shit happens and breaks the system, it's time to level up troubleshooting skills ;-)
 
